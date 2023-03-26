@@ -1,5 +1,5 @@
 # shotit-frontend
-The frontend of shotit, with full documetation.
+The frontend of shotit, with full documentation.
 
 
 # Website
