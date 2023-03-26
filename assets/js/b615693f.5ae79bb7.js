@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkshotit_frontend=self.webpackChunkshotit_frontend||[]).push([[4112],{139:t=>{t.exports=JSON.parse('{"label":"hello","permalink":"/shotit-frontend/blog/tags/hello","allTagsPath":"/shotit-frontend/blog/tags","count":2}')}}]);

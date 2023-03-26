@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkshotit_frontend=self.webpackChunkshotit_frontend||[]).push([[9900],{4148:t=>{t.exports=JSON.parse('{"permalink":"/shotit-frontend/blog/tags/hello","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
