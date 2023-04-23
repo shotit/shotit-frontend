@@ -11,12 +11,6 @@
   min-height: 100vh;
 }
 
-.headerBtnGroup {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-
 .logoBgContainer {
   position: absolute;
   right: 0;
@@ -39,12 +33,6 @@
     padding: 2rem;
     flex-direction: column;
     justify-content: space-between;
-  }
-
-  .headerBtnGroup {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
   }
 
   .logoBgContainer {

@@ -18,7 +18,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme="dark"] {
+[data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -34,6 +34,13 @@
   font-size: 24px;
 }
 
+.hero__btngroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 @media (min-width: 992px) {
   .container {
     z-index: 1;
@@ -42,5 +49,12 @@
 
   .hero__title {
     font-size: 72px;
+  }
+
+  .hero__btngroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
   }
 }
