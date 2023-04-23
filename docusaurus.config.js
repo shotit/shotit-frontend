@@ -7,7 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Screenshot-to-Video Search Engine',
-  tagline: 'Shotit is a screenshot-to-video Search Engine tailored for TV & Film, blazing-fast and compute-efficient.',
+  tagline:
+    'Shotit is a screenshot-to-video search engine tailored for TV & Film, blazing-fast and compute-efficient.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -42,15 +43,13 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/shotit/shotit-frontend/tree/main/',
+          editUrl: 'https://github.com/shotit/shotit-frontend/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/shotit/shotit-frontend/tree/main/',
+          editUrl: 'https://github.com/shotit/shotit-frontend/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -77,7 +76,7 @@ const config = {
             position: 'right',
             label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'right'},
+          { to: '/blog', label: 'Blog', position: 'right' },
           {
             href: 'https://github.com/shotit/shotit',
             label: 'GitHub',
