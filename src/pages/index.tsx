@@ -15,9 +15,13 @@ function HomepageHeader() {
         <h1 className="hero__title">Screenshot-to-Video</h1>
         <h1 className="hero__title">Search Engine</h1>
         <p className="hero__subtitle">
-          <div>Shotit is a screenshot-to-video search engine</div>
-          <div>tailored for TV & Film, blazing-fast and</div>
-          <div>compute-efficient.</div>
+          <div className="hero__subtitle">
+            Shotit is a screenshot-to-video search engine
+          </div>
+          <div className="hero__subtitle">
+            tailored for TV & Film, blazing-fast and
+          </div>
+          <div className="hero__subtitle">compute-efficient.</div>
         </p>
         <section className="hero__btngroup">
           <div>
