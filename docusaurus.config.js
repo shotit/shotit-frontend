@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Shotit',
-  tagline: 'Blazing-fast and compute-efficient screenshot-to-video search engine (Not ChatGPT). Shot!',
+  title: 'Screenshot-to-Video Search Engine',
+  tagline: 'Shotit is a screenshot-to-video Search Engine tailored for TV & Film, blazing-fast and compute-efficient.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -74,13 +74,18 @@ const config = {
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
+            position: 'right',
+            label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'right'},
           {
             href: 'https://github.com/shotit/shotit',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            href: 'https://twitter.com/shotit007',
+            label: 'Twitter',
             position: 'right',
           },
         ],
