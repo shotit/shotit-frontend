@@ -20,15 +20,22 @@ function HomepageHeader() {
           <div>compute-efficient.</div>
         </p>
         <div className={styles.headerBtnGroup}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro"
-          >
-            Get Started
-          </Link>
-          <Link className="button button--success button--lg" to="/docs/intro">
-            Try a Demo
-          </Link>
+          <div>
+            <Link
+              className="button button--secondary button--lg"
+              to="/docs/intro"
+            >
+              Get Started
+            </Link>
+          </div>
+          <div>
+            <Link
+              className="button button--success button--lg"
+              to="/docs/intro"
+            >
+              Try a Demo
+            </Link>
+          </div>
         </div>
       </div>
       <div className={styles.logoBgContainer}>
