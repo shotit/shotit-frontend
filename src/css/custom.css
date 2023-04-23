@@ -41,6 +41,12 @@
   gap: 1rem;
 }
 
+@media (max-width: 992px) {
+  .container .hero__title:first-of-type {
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: 992px) {
   .container {
     z-index: 1;
