@@ -19,7 +19,7 @@ function HomepageHeader() {
           <div>tailored for TV & Film, blazing-fast and</div>
           <div>compute-efficient.</div>
         </p>
-        <div className="hero__btngroup">
+        <section className="hero__btngroup">
           <div>
             <Link
               className="button button--secondary button--lg"
@@ -36,7 +36,7 @@ function HomepageHeader() {
               Try a Demo
             </Link>
           </div>
-        </div>
+        </section>
       </div>
       <div className={styles.logoBgContainer}>
         <div className={styles.logoBg}>
