@@ -19,7 +19,7 @@ function HomepageHeader() {
           <div>tailored for TV & Film, blazing-fast and</div>
           <div>compute-efficient.</div>
         </p>
-        <div className={styles.btnGroup}>
+        <div className={styles.headerBtnGroup}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro"
