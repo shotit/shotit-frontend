@@ -27,7 +27,7 @@ function HomepageHeader() {
           <div>
             <Link
               className="button button--secondary button--lg"
-              to="/docs/intro"
+              to="https://github.com/shotit"
             >
               Get Started
             </Link>
@@ -35,7 +35,7 @@ function HomepageHeader() {
           <div>
             <Link
               className="button button--success button--lg"
-              to="/docs/intro"
+              to="https://github.com/shotit"
             >
               Try a Demo
             </Link>
