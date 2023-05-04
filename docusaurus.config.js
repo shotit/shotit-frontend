@@ -62,7 +62,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/social-card.png',
       navbar: {
         title: 'Shotit',
         logo: {
@@ -105,16 +105,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/shotit/shotit',
+                label: 'Discord',
+                href: 'https://discord.gg/h89hnXx4',
               },
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/shotit007',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/h89hnXx4',
               },
               {
                 label: 'Stack Overflow',
