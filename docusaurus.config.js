@@ -77,6 +77,7 @@ const config = {
             label: 'Docs',
           },
           { to: '/blog', label: 'Blog', position: 'right' },
+          { to: '/demo', label: 'Demo', position: 'right' },
           {
             href: 'https://github.com/shotit/shotit',
             label: 'GitHub',
@@ -105,16 +106,20 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/shotit',
+                label: 'GitHub',
+                href: 'https://github.com/shotit/shotit',
               },
-              // {
-              //   label: 'Discord',
-              //   href: 'https://discordapp.com/invite/docusaurus',
-              // },
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/shotit007',
+              },
+              {
+                label: 'Discord',
+                href: 'https://discord.gg/h89hnXx4',
+              },
+              {
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/shotit',
               },
             ],
           },
@@ -132,7 +137,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} PolarBeaver Technology. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Shotit. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
