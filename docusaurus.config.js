@@ -77,7 +77,6 @@ const config = {
             label: 'Docs',
           },
           { to: '/blog', label: 'Blog', position: 'right' },
-          { to: '/demo', label: 'Demo', position: 'right' },
           {
             href: 'https://github.com/shotit/shotit',
             label: 'GitHub',
