@@ -1,0 +1,22 @@
+.demoContainer {
+  margin: 0 1rem;
+}
+
+.searchBarContainer {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftDemoSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftDemoSide img {
+  max-width: 100%;
+  max-height: calc(100vh - 130px);
+}
