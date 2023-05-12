@@ -153,7 +153,13 @@ export default function SearchBar({
               className={imageUrlInput}
               placeholder="Paste screenshot URL or drop your screenshot here"
               value={imageURL.startsWith('http') ? imageURL : ''}
-              onInput={handleURLpaste}
+              onChange={(e) => {
+                handleURLpaste(e);
+                setShowSampleModal(false);
+              }}
+              onPaste={() => {
+                setShowSampleModal(false);
+              }}
               onClick={detectInputClick}
             />
             <input type="submit" />

@@ -20,3 +20,30 @@
   max-width: 100%;
   max-height: calc(100vh - 130px);
 }
+
+.dropEffect {
+  position: absolute;
+  top: 60px;
+  width: 98%;
+  height: calc(100vh - 60px);
+  background: hsla(0, 0%, 100%, 0);
+  border: 5px solid transparent;
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  transition: all 50ms ease-out;
+  backdrop-filter: blur(0);
+  z-index: 0;
+}
+
+.dropping {
+  background: hsla(0, 0%, 100%, 0.7);
+  border: 0.5rem dashed hsl(227, 100%, 70%);
+  color: hsl(227, 100%, 70%);
+  transition: all 50ms ease-out;
+  backdrop-filter: blur(3px);
+  z-index: 100;
+}

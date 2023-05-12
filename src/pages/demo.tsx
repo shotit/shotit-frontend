@@ -5,8 +5,11 @@ import defaultImg from '@site/static/img/default.png';
 import SearchingImageURLContext from '../contexts/SearchingImageURLContext';
 import SearchBar from '../components/SearchBar';
 
+const { dropping } = styles;
+
 export default function DemoPage({}) {
   const [imageURL, setImageURL] = useState('');
+  const [dropTargetText, setDropTargetText] = useState('');
   const [searchingImageURL, setSearchingImageURL] = useContext(
     SearchingImageURLContext
   );
@@ -15,20 +18,23 @@ export default function DemoPage({}) {
     // Hide footer
     document.querySelector('footer').setAttribute('style', 'display: none;');
 
-    // window.addEventListener(
-    //   'paste',
-    //   (e) => {
-    //     console.log('object');
-    //     const items = e.clipboardData?.items;
-    //     console.log({ items });
-    //     if (!items) return;
-    //     const item = Array.from(items).find((e) => e.type.startsWith('image'));
-    //     if (!item) return;
-    //     setSearchingImageURL(URL.createObjectURL(item.getAsFile()));
-    //     e.preventDefault();
-    //   },
-    //   false
-    // );
+    const handlePasteAnywhere = (e) => {
+      console.log('image paste');
+      const items = e.clipboardData?.items;
+      console.log({ items });
+      if (!items) return;
+      const item = Array.from(items).find((e) => e.type.startsWith('image'));
+      if (!item) return;
+      setImageURL(URL.createObjectURL(item.getAsFile()));
+      setSearchingImageURL(URL.createObjectURL(item.getAsFile()));
+      e.preventDefault();
+    };
+
+    window.addEventListener('paste', handlePasteAnywhere, false);
+
+    return () => {
+      window.removeEventListener('paste', handlePasteAnywhere);
+    };
   }, []);
 
   const clearImageURL = useCallback(() => {
@@ -37,6 +43,7 @@ export default function DemoPage({}) {
 
   const handleURLpaste = useCallback((e) => {
     console.log('handleURLpaste');
+
     if (String(e).startsWith('http')) {
       setImageURL(e);
       setSearchingImageURL(
@@ -49,11 +56,8 @@ export default function DemoPage({}) {
       );
       return;
     }
-    e.preventDefault();
-    // Image Data
-    console.log(e);
 
-    // URL text
+    // URL
     if (!e.target.value.length) {
       setImageURL('');
       history.replaceState(null, null, '/shotit-frontend/demo');
@@ -92,6 +96,31 @@ export default function DemoPage({}) {
   return (
     <Layout>
       <div className={styles.demoContainer}>
+        <div
+          className={styles.dropEffect}
+          onDrop={(e) => {
+            const result = handleFileSelect(e);
+            if (result) {
+              setDropTargetText(result);
+            } else {
+              e.target.classList.remove(dropping);
+            }
+          }}
+          onDragOver={(e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'copy';
+          }}
+          onDragEnter={(e) => {
+            e.target.classList.add(dropping);
+            setDropTargetText('Drop image here');
+          }}
+          onDragLeave={(e) => {
+            e.target.classList.remove(dropping);
+          }}
+        >
+          {dropTargetText}
+        </div>
         <div className="row">
           <div className={`col col--12 ${styles.searchBarContainer}`}>
             <SearchBar
