@@ -132,17 +132,14 @@ export default function DemoPage({}) {
           </div>
         </div>
         <div className="row">
-          <div
-            className={`col col--6 ${styles.leftDemoSide}`}
-            style={{ background: 'black', height: 'calc(100vh - 130px)' }}
-          >
+          <div className={`col col--6 ${styles.leftDemoSide}`}>
             <img src={imageURL ? imageURL : defaultImg} alt="" />
           </div>
-          <div
-            className="col col--6"
-            style={{ background: 'aqua', height: 'calc(100vh - 130px)' }}
-          >
-            <p>This is a React page</p>
+          <div className={`col col--6 ${styles.rightDemoSide}`}>
+            <div>
+              <div className={styles.loadingSvg}></div>
+              <p className={styles.searching}>Searching...</p>
+            </div>
           </div>
         </div>
       </div>
