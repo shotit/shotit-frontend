@@ -10,6 +10,8 @@
 }
 
 .leftDemoSide {
+  /* relative to .dropEffect */
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,9 +28,25 @@
 .rightDemoSide {
   border-top: 1px solid hsl(0deg 0% 50.2% / 20%);
   height: calc(100vh - 130px);
+}
+
+.skeleton {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.searching {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.result {
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .loadingSvg {
@@ -39,7 +57,7 @@
   background-size: cover;
 }
 
-.searching {
+.searchingText {
   font-size: 24px;
   font-weight: bold;
   color: #d3e0ea;
@@ -47,9 +65,9 @@
 
 .dropEffect {
   position: absolute;
-  top: 60px;
-  width: 98%;
-  height: calc(100vh - 60px);
+  top: 0;
+  width: 100%;
+  height: calc(100vh - 130px);
   background: hsla(0, 0%, 100%, 0);
   border: 5px solid transparent;
   text-align: center;

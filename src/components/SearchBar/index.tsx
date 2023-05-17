@@ -31,8 +31,8 @@ const sampleScreenshots = [
   },
   {
     name: 'Sintel',
-    thumbnail: 'https://i.ibb.co/RDNRzsX/sintel.png',
-    url: 'https://i.ibb.co/crw4DZW/sintel.png',
+    thumbnail: 'https://i.ibb.co/MnDFJZQ/sintel.png',
+    url: 'https://i.ibb.co/1ZfF47j/sintel.png',
   },
   {
     name: 'Tears of Steel',
@@ -151,7 +151,7 @@ export default function SearchBar({
               required
               name="imageURL"
               className={imageUrlInput}
-              placeholder="Paste screenshot URL or drop your screenshot here"
+              placeholder="Paste screenshot URL or drop your screenshot below"
               value={imageURL.startsWith('http') ? imageURL : ''}
               onChange={(e) => {
                 handleURLpaste(e);
@@ -194,8 +194,11 @@ export default function SearchBar({
                       key={url}
                       className={sampleModalItem}
                       onClick={() => {
-                        // make use of this existing function
-                        handleURLpaste(url);
+                        if (imageURL !== url) {
+                          clearImageURL();
+                          // make use of this existing function
+                          handleURLpaste(url);
+                        }
                         setShowSampleModal(false);
                       }}
                     >
