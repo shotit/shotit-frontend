@@ -175,22 +175,32 @@ export default function DemoPage({}) {
                   video,
                 }) => {
                   return (
-                    // 手风琴效果
                     <div
+                      key={`${Date.now()}${similarity}`}
                       style={{
                         display: 'flex',
                         flexDirection: 'row',
                         flexWrap: 'wrap',
                         justifyContent: 'flex-start',
                         alignItems: 'center',
-                        background: 'peru',
-                        border: '1px solid black',
+                        border: '1px solid #e1eaf1',
                         borderRadius: '1rem',
                         marginTop: '1rem',
                         marginBottom: '1rem',
+                        boxShadow: '0 2px 12px 0 rgba(0,0,0,.2)',
                       }}
                     >
-                      <div style={{ width: '100%' }}>{filename}</div>
+                      <div
+                        style={{
+                          width: '100%',
+                          margin: '1rem 1rem 0',
+                          fontSize: '24px',
+                          fontWeight: 'bold',
+                          borderBottom: '1px solid',
+                        }}
+                      >
+                        {filename}
+                      </div>
                       <div
                         style={{
                           display: 'inline-block',
