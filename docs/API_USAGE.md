@@ -7,7 +7,7 @@ sidebar_position: 3
 
 Shotit API provides a HTTP interface for developers to interact with `Shotit` programmatically.
 
-Using the API, you can develop programs such as: chat bots, browser plugins, video tagging / deduplication applications, games or whatever scripts that you need to know the anime info from an image.
+Using the API, you can develop programs such as: chat bots, browser plugins, video tagging / deduplication applications, games or whatever scripts that you need to know the video info from a screenshot.
 
 :::tip My tip
 
