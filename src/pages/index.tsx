@@ -27,16 +27,13 @@ function HomepageHeader() {
           <div>
             <Link
               className="button button--secondary button--lg"
-              to="https://github.com/shotit"
+              to="/docs/get_started"
             >
               Get Started
             </Link>
           </div>
           <div>
-            <Link
-              className="button button--success button--lg"
-              to="/shotit-frontend/demo"
-            >
+            <Link className="button button--success button--lg" to="/demo">
               Try a Demo
             </Link>
           </div>

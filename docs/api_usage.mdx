@@ -19,23 +19,20 @@ Please replace `api.yourendpoints.domain` with your own shotit api service domai
 
 ### Search by image URL
 
-<!-- tabs:start -->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-#### **cURL**
+<Tabs>
+<TabItem value="bash" label="cURL">
 
 ```bash
 curl "https://api.yourendpoints.domain/search?url=https://i.ibb.co/KGwVkqy/big-buck-bunny-10.png"
 ```
 
-#### **PowerShell**
+</TabItem>
+<TabItem value="js" label="JavaScript">
 
-```powershell
-Invoke-RestMethod "https://api.yourendpoints.domain/search?url=https://i.ibb.co/KGwVkqy/big-buck-bunny-10.png"
-```
-
-#### **javascript**
-
-```javascript
+```js
 await fetch(
   `https://api.yourendpoints.domain/search?url=${encodeURIComponent(
     'https://i.ibb.co/KGwVkqy/big-buck-bunny-10.png'
@@ -43,9 +40,10 @@ await fetch(
 ).then((e) => e.json());
 ```
 
-#### **python**
+</TabItem>
+<TabItem value="py" label="Python">
 
-```python
+```py
 import requests
 import urllib.parse
 requests
@@ -54,29 +52,31 @@ requests
 ).json()
 ```
 
-<!-- tabs:end -->
+</TabItem>
+<TabItem value="powershell" label="PowerShell">
+
+```powershell
+Invoke-RestMethod "https://api.yourendpoints.domain/search?url=https://i.ibb.co/KGwVkqy/big-buck-bunny-10.png"
+```
+
+</TabItem>
+</Tabs>
 
 This method is the easiest if your image is already hosted somewhere in public. Otherwise, you must upload the image.
 
 ### Search by image upload
 
-<!-- tabs:start -->
+<Tabs>
+<TabItem value="bash" label="cURL">
 
-#### **cURL**
-
-```
+```bash
 curl --data-binary "@demo.jpg" https://api.yourendpoints.domain/search
 ```
 
-#### **PowerShell**
+</TabItem>
+<TabItem value="js" label="JavaScript">
 
-```powershell
-Invoke-RestMethod -Method Post -InFile .\demo.jpg https://api.yourendpoints.domain/search
-```
-
-#### **javascript**
-
-```javascript
+```js
 // For nodejs only
 import fs from 'fs';
 import fetch from 'node-fetch';
@@ -87,9 +87,10 @@ await fetch('https://api.yourendpoints.domain/search', {
 }).then((e) => e.json());
 ```
 
-#### **python**
+</TabItem>
+<TabItem value="py" label="Python">
 
-```python
+```py
 import requests
 requests.post("https://api.yourendpoints.domain/search",
   data=open("demo.jpg", "rb"),
@@ -97,7 +98,15 @@ requests.post("https://api.yourendpoints.domain/search",
 ).json()
 ```
 
-<!-- tabs:end -->
+</TabItem>
+<TabItem value="powershell" label="PowerShell">
+
+```powershell
+Invoke-RestMethod -Method Post -InFile .\demo.jpg https://api.yourendpoints.domain/search
+```
+
+</TabItem>
+</Tabs>
 
 Supported Content-Types are `image/*`, `video/*`, `application/octet-stream` and `application/x-www-form-urlencoded`
 
@@ -105,9 +114,8 @@ File size is limited to 25MB. The server would throw HTTP 413 Payload Too Large 
 
 ### Search by FORM POST (multipart/form-data)
 
-<!-- tabs:start -->
-
-#### **HTML**
+<Tabs>
+<TabItem value="html" label="HTML">
 
 ```html
 <form
@@ -120,22 +128,17 @@ File size is limited to 25MB. The server would throw HTTP 413 Payload Too Large 
 </form>
 ```
 
-#### **cURL**
+</TabItem>
+<TabItem value="bash" label="cURL">
 
-```
+```bash
 curl -F "image=@demo.jpg" https://api.yourendpoints.domain/search
 ```
 
-#### **PowerShell**
+</TabItem>
+<TabItem value="js" label="JavaScript">
 
-```powershell
-// Requires PowerShell 7.x
-Invoke-RestMethod -Method Post -Form @{image=Get-Item -Path "demo.jpg"} https://api.yourendpoints.domain/search
-```
-
-#### **javascript**
-
-```javascript
+```js
 // For web browsers only
 const formData = new FormData();
 formData.append('image', imageBlob);
@@ -145,18 +148,28 @@ await fetch('https://api.yourendpoints.domain/search', {
 }).then((e) => e.json());
 ```
 
-File size is limited to 25MB. The server would throw HTTP 413 Payload Too Large if it is too large.
+</TabItem>
+<TabItem value="py" label="Python">
 
-#### **python**
-
-```python
+```py
 import requests
 requests.post("https://api.yourendpoints.domain/search",
   files={"image": open("demo.jpg", "rb")}
 ).json()
 ```
 
-<!-- tabs:end -->
+</TabItem>
+<TabItem value="powershell" label="PowerShell">
+
+```powershell
+// Requires PowerShell 7.x
+Invoke-RestMethod -Method Post -Form @{image=Get-Item -Path "demo.jpg"} https://api.yourendpoints.domain/search
+```
+
+</TabItem>
+</Tabs>
+
+File size is limited to 25MB. The server would throw HTTP 413 Payload Too Large if it is too large.
 
 ### Cut Black Borders
 
@@ -164,23 +177,17 @@ shotit can detect black borders automatically and cut away unnecessary parts of 
 
 To enable black border crop, add `cutBorders` to the query string. e.g.
 
-<!-- tabs:start -->
-
-#### **cURL**
+<Tabs>
+<TabItem value="bash" label="cURL">
 
 ```bash
 curl "https://api.yourendpoints.domain/search?cutBorders&url=https://i.ibb.co/KGwVkqy/big-buck-bunny-10.png"
 ```
 
-#### **PowerShell**
+</TabItem>
+<TabItem value="js" label="JavaScript">
 
-```powershell
-Invoke-RestMethod "https://api.yourendpoints.domain/search?cutBorders&url=https://i.ibb.co/KGwVkqy/big-buck-bunny-10.png"
-```
-
-#### **javascript**
-
-```javascript
+```js
 await fetch(
   `https://api.yourendpoints.domain/search?cutBorders&url=${encodeURIComponent(
     'https://i.ibb.co/KGwVkqy/big-buck-bunny-10.png'
@@ -188,9 +195,10 @@ await fetch(
 ).then((e) => e.json());
 ```
 
-#### **python**
+</TabItem>
+<TabItem value="py" label="Python">
 
-```python
+```py
 import requests
 import urllib.parse
 requests
@@ -199,7 +207,15 @@ requests
 ).json()
 ```
 
-<!-- tabs:end -->
+</TabItem>
+<TabItem value="powershell" label="PowerShell">
+
+```powershell
+Invoke-RestMethod "https://api.yourendpoints.domain/search?cutBorders&url=https://i.ibb.co/KGwVkqy/big-buck-bunny-10.png"
+```
+
+</TabItem>
+</Tabs>
 
 ### Filter by imdb ID
 
@@ -207,23 +223,17 @@ You can search for a matching scene only in a particular anime by imdb ID. This 
 
 First you have to look for the imdb ID of your anime from [imdb](https://imdb.co/) first. Then add `imdbID=1` to the query string. e.g. imdb ID of Cowboy Bebop is 1
 
-<!-- tabs:start -->
-
-#### **cURL**
+<Tabs>
+<TabItem value="bash" label="cURL">
 
 ```bash
 curl "https://api.yourendpoints.domain/search?imdbID=1&url=https://i.ibb.co/KGwVkqy/big-buck-bunny-10.png"
 ```
 
-#### **PowerShell**
+</TabItem>
+<TabItem value="js" label="JavaScript">
 
-```powershell
-Invoke-RestMethod "https://api.yourendpoints.domain/search?imdbID=1&url=https://i.ibb.co/KGwVkqy/big-buck-bunny-10.png"
-```
-
-#### **javascript**
-
-```javascript
+```js
 await fetch(
   `https://api.yourendpoints.domain/search?imdbID=1&url=${encodeURIComponent(
     'https://i.ibb.co/KGwVkqy/big-buck-bunny-10.png'
@@ -231,9 +241,10 @@ await fetch(
 ).then((e) => e.json());
 ```
 
-#### **python**
+</TabItem>
+<TabItem value="py" label="Python">
 
-```python
+```py
 import requests
 import urllib.parse
 requests
@@ -242,7 +253,15 @@ requests
 ).json()
 ```
 
-<!-- tabs:end -->
+</TabItem>
+<TabItem value="powershell" label="PowerShell">
+
+```powershell
+Invoke-RestMethod "https://api.yourendpoints.domain/search?imdbID=1&url=https://i.ibb.co/KGwVkqy/big-buck-bunny-10.png"
+```
+
+</TabItem>
+</Tabs>
 
 ### Search Image Format
 
@@ -295,84 +314,6 @@ The recommended resolution is 640 x 360px, higher resolution doesn't yield bette
 - `episode` can be null because it is just a result of parsing the `filename` with [aniep](https://github.com/soruly/aniep)
 
 By default, it only returns imdb ID for search results. To get more anime info, make a second query to [imdb API](https://github.com/imdb/ApiV2-GraphQL-Docs). If you need chinese-translated titles, take a look at [imdb-chinese](https://github.com/soruly/imdb-chinese)
-
-### Include imdb info
-
-Asking for imdb info would slow down your request because it takes additional query to imdb, and may fail depending on their availability.
-
-Only ask for it when you need nothing more than `idMal`, `title`, `synonyms`, `isAdult` from imdb, you can add `imdbInfo` to query string. e.g.
-
-<!-- tabs:start -->
-
-#### **cURL**
-
-```bash
-curl "https://api.yourendpoints.domain/search?imdbInfo&url=https://i.ibb.co/KGwVkqy/big-buck-bunny-10.png"
-```
-
-#### **PowerShell**
-
-```powershell
-Invoke-RestMethod "https://api.yourendpoints.domain/search?imdbInfo&url=https://i.ibb.co/KGwVkqy/big-buck-bunny-10.png"
-```
-
-#### **javascript**
-
-```javascript
-await fetch(
-  `https://api.yourendpoints.domain/search?imdbInfo&url=${encodeURIComponent(
-    'https://i.ibb.co/KGwVkqy/big-buck-bunny-10.png'
-  )}`
-).then((e) => e.json());
-```
-
-#### **python**
-
-```python
-import requests
-import urllib.parse
-requests
-.get("https://api.yourendpoints.domain/search?imdbInfo&url={}"
-  .format(urllib.parse.quote_plus("https://i.ibb.co/KGwVkqy/big-buck-bunny-10.png"))
-).json()
-```
-
-<!-- tabs:end -->
-
-Example response
-
-```json
-{
-  "frameCount": 745506,
-  "error": "",
-  "result": [
-    {
-      "imdb": {
-        "id": 99939,
-        "idMal": 34658,
-        "title": {
-          "native": "ネコぱらOVA",
-          "romaji": "Nekopara OVA",
-          "english": null
-        },
-        "synonyms": ["Neko Para OVA"],
-        "isAdult": false
-      },
-      "filename": "Nekopara - OVA (BD 1280x720 x264 AAC).mp4",
-      "episode": null,
-      "from": 97.75,
-      "to": 98.92,
-      "similarity": 0.9440424588727485,
-      "video": "https://media.shotit/video/99939/Nekopara%20-%20OVA%20(BD%201280x720%20x264%20AAC).mp4?t=98.335&now=1653892514&token=xxxxxxxxxxxxxx",
-      "image": "https://media.shotit/image/99939/Nekopara%20-%20OVA%20(BD%201280x720%20x264%20AAC).mp4.jpg?t=98.335&now=1653892514&token=xxxxxxxxxxxxxx"
-    }
-  ]
-}
-```
-
-The data inside the imdb object is an unmodified response from imdb API. These data are managed by imdb and they may change or delete these entries anytime.
-
-Some title variants would be null. Please read [this section on imdb API Docs](https://imdb.gitbook.io/imdb-apiv2-docs/overview/migrating-from-apiv1#media-titles) for explanations. It is recommended to have some fallback when selecting your preferred title.
 
 ### Error codes
 
@@ -435,34 +376,37 @@ Error codes
 
 Let you check the search quota and limit for your account (with API key) or IP address (without API key).
 
-<!-- tabs:start -->
-
-#### **cURL**
+<Tabs>
+<TabItem value="bash" label="cURL">
 
 ```bash
 curl "https://api.yourendpoints.domain/me"
 ```
 
-#### **PowerShell**
+</TabItem>
+<TabItem value="js" label="JavaScript">
+
+```js
+await fetch('https://api.yourendpoints.domain/me').then((e) => e.json());
+```
+
+</TabItem>
+<TabItem value="py" label="Python">
+
+```py
+import requests
+requests.get("https://api.yourendpoints.domain/me").json()
+```
+
+</TabItem>
+<TabItem value="powershell" label="PowerShell">
 
 ```powershell
 Invoke-RestMethod "https://api.yourendpoints.domain/me"
 ```
 
-#### **javascript**
-
-```javascript
-await fetch('https://api.yourendpoints.domain/me').then((e) => e.json());
-```
-
-#### **python**
-
-```python
-import requests
-requests.get("https://api.yourendpoints.domain/me").json()
-```
-
-<!-- tabs:end -->
+</TabItem>
+</Tabs>
 
 Example Response
 
@@ -492,23 +436,17 @@ When searching with API Keys, it would count towards your account quota and limi
 
 ### Using API Keys in HTTP header
 
-<!-- tabs:start -->
-
-#### **cURL**
+<Tabs>
+<TabItem value="bash" label="cURL">
 
 ```bash
 curl -H "x-trace-key: xxxxxxxxxxxxxxxxxxxxxxx" "https://api.yourendpoints.domain/me"
 ```
 
-#### **PowerShell**
+</TabItem>
+<TabItem value="js" label="JavaScript">
 
-```powershell
-Invoke-RestMethod -Headers @{"x-trace-key" = "xxxxxxxxxxxxxxxxxxxxxxx"} https://api.yourendpoints.domain/me
-```
-
-#### **javascript**
-
-```javascript
+```js
 await fetch('https://api.yourendpoints.domain/me', {
   headers: {
     'x-trace-key': 'xxxxxxxxxxxxxxxxxxxxxxx',
@@ -516,48 +454,60 @@ await fetch('https://api.yourendpoints.domain/me', {
 }).then((e) => e.json());
 ```
 
-#### **python**
+</TabItem>
+<TabItem value="py" label="Python">
 
-```python
+```py
 import requests
 requests.get("https://api.yourendpoints.domain/me", headers={
   "x-trace-key": "xxxxxxxxxxxxxxxxxxxxxxx"
 }).json()
 ```
 
-<!-- tabs:end -->
+</TabItem>
+<TabItem value="powershell" label="PowerShell">
+
+```powershell
+Invoke-RestMethod -Headers @{"x-trace-key" = "xxxxxxxxxxxxxxxxxxxxxxx"} https://api.yourendpoints.domain/me
+```
+
+</TabItem>
+</Tabs>
 
 ### Using API Keys in query string
 
 If you're lazy and don't mind your API Key being exposed to browser history or logs. Just put your key in key in query string
 
-<!-- tabs:start -->
-
-#### **cURL**
+<Tabs>
+<TabItem value="bash" label="cURL">
 
 ```bash
 curl "https://api.yourendpoints.domain/me?key=xxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
-#### **PowerShell**
+</TabItem>
+<TabItem value="js" label="JavaScript">
 
-```powershell
-Invoke-RestMethod "https://api.yourendpoints.domain/me?key=xxxxxxxxxxxxxxxxxxxxxxx"
-```
-
-#### **javascript**
-
-```javascript
+```js
 await fetch(
   'https://api.yourendpoints.domain/me?key=xxxxxxxxxxxxxxxxxxxxxxx'
 ).then((e) => e.json());
 ```
 
-#### **python**
+</TabItem>
+<TabItem value="py" label="Python">
 
-```python
+```py
 import requests
 requests.get("https://api.yourendpoints.domain/me?key=xxxxxxxxxxxxxxxxxxxxxxx").json()
 ```
 
-<!-- tabs:end -->
+</TabItem>
+<TabItem value="powershell" label="PowerShell">
+
+```powershell
+Invoke-RestMethod "https://api.yourendpoints.domain/me?key=xxxxxxxxxxxxxxxxxxxxxxx"
+```
+
+</TabItem>
+</Tabs>

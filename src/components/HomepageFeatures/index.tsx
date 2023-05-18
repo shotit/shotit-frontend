@@ -39,7 +39,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Shotit is cloud native architecture ready. You can deploy it with EC2
-        and S3 on the go. K8s cluster version comming soon.
+        and S3 on the go. K8s cluster version coming soon.
       </>
     ),
   },
@@ -96,7 +96,7 @@ export default function HomepageFeatures(): JSX.Element {
           </div>
           <Link
             className="col col--4 col--8--md button button--success button--lg"
-            to="https://github.com/shotit"
+            to="https://github.com/shotit/shotit"
           >
             Give Shotit a Star
           </Link>
