@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkshotit_frontend=self.webpackChunkshotit_frontend||[]).push([[9151],{2891:t=>{t.exports=JSON.parse('{"permalink":"/shotit-frontend/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
