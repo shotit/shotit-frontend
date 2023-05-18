@@ -35,7 +35,7 @@ function HomepageHeader() {
           <div>
             <Link
               className="button button--success button--lg"
-              to="https://github.com/shotit"
+              to="/shotit-frontend/demo"
             >
               Try a Demo
             </Link>

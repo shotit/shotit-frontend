@@ -70,6 +70,7 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          { to: '/demo', label: 'Demo', position: 'right' },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
