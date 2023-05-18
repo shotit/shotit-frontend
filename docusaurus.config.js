@@ -31,7 +31,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'ja', 'zh-Hans', 'ko'],
   },
 
   presets: [
@@ -77,7 +77,7 @@ const config = {
             position: 'right',
             label: 'Docs',
           },
-          { to: '/blog', label: 'Blog', position: 'right' },
+          // { to: '/blog', label: 'Blog', position: 'right' },
           {
             href: 'https://github.com/shotit/shotit',
             label: 'GitHub',
@@ -88,6 +88,12 @@ const config = {
             label: 'Twitter',
             position: 'right',
           },
+          // highlight-start
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
+          // highlight-end
         ],
       },
       footer: {
@@ -97,8 +103,16 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Get Started',
+                to: '/docs/get_started',
+              },
+              {
+                label: 'Further Documentation',
+                to: '/docs/further_documentation',
+              },
+              {
+                label: 'API Usages',
+                to: '/docs/api_usage',
               },
             ],
           },
@@ -122,10 +136,10 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
+              // {
+              //   label: 'Blog',
+              //   to: '/blog',
+              // },
               {
                 label: 'GitHub',
                 href: 'https://github.com/shotit/shotit',
