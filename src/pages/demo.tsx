@@ -203,8 +203,7 @@ export default function DemoPage({ }) {
                   return (
                     <div
                       key={`${Date.now()}${similarity}`}
-                      onClick={() => clickToIndex(index
-                      )}
+                      onClick={() => clickToIndex(index)}
                       className={`${styles.resultBox}`}
                       style={{
                         boxShadow: `${
@@ -214,28 +213,40 @@ export default function DemoPage({ }) {
                         }`,
                       }}
                     >
-                      <div
-                        className={`${styles.filename}`}
-                      >
-                        {filename}
-                      </div>
-                      <div
-                        className={`${styles.thumbnail}`}
-                      >
-                        <img
-                          src="https://i.ibb.co/Fq1bTmX/elephant-s-dream.png"
-                        ></img>
+                      <div className={`${styles.filename}`}>{filename}</div>
+                      <div className={`${styles.thumbnail}`}>
+                        <img src="https://i.ibb.co/Fq1bTmX/elephant-s-dream.png"></img>
                         {/* <img src={image}></img> */}
                       </div>
-                      <div
-                        className={`${styles.metainfo}`}
-                      >
+                      <div className={`${styles.metainfo}`}>
                         {/* <div>{episode}</div> */}
                         <div>{timeCodeString(from, to)}</div>
                         <div>
                           Similarity: {`~${(similarity * 100).toFixed(2)}%`}
                         </div>
-                        <div>IMDB: {imdb}</div>
+                        <div>
+                          IMDB:&nbsp;
+                          <a
+                            href={`https://www.imdb.com/title/${imdb}/`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {imdb}
+                            {/* open in new tab icon */}
+                            <svg
+                              width="13.5"
+                              height="13.5"
+                              aria-hidden="true"
+                              viewBox="0 0 24 24"
+                              className="iconExternalLink_node_modules-@docusaurus-theme-classic-lib-theme-Icon-ExternalLink-styles-module"
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"
+                              ></path>
+                            </svg>
+                          </a>
+                        </div>
                         {/* <div>{image}</div>
                         <div>{video}</div> */}
                       </div>
