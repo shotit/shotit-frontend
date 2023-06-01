@@ -19,13 +19,65 @@ const formatTime = (timeInSeconds: string) => {
   ].join(':');
 };
 
+const toBlob = function (src) {
+  return new Promise((resolve) => {
+    let img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = (e) => {
+      let canvas = document.createElement('canvas');
+      canvas.crossOrigin = 'anonymous';
+      canvas.height = 720;
+      if (e.target.nodeName === 'VIDEO') {
+        canvas.width =
+          (e.target.videoWidth / e.target.videoHeight) * canvas.height;
+      } else {
+        canvas.width = (e.target.width / e.target.height) * canvas.height;
+      }
+      canvas
+        .getContext('2d')
+        .drawImage(e.target, 0, 0, canvas.width, canvas.height);
+      canvas.toBlob(
+        function (blob) {
+          blobSearch(blob).then((res) => {
+            resolve(res);
+          });
+        },
+        'image/jpeg',
+        0.8
+      );
+    };
+    img.src = src;
+  });
+};
+
+const blobSearch = async (imageBlob) => {
+  const formData = new FormData();
+  formData.append('image', imageBlob);
+  const response = await fetch(
+    `http://13.214.77.230:3311/search?cutBorders=&=`,
+    {
+      method: 'POST',
+      body: formData,
+    }
+  );
+  return await response.json();
+};
+
+const urlSearch = async (url: String) => {
+  const response = await fetch(
+    `http://13.214.77.230:3311/search?cutBorders=&url=${url}`
+    // `http://127.0.0.1:3311/search?url=${url}`
+  );
+  return await response.json();
+};
+
 const timeCodeString = (from: string, to: string) => {
   return formatTime(String(from)) === formatTime(String(to))
     ? formatTime(String(from))
     : `${formatTime(String(from))} - ${formatTime(String(to))}`;
-}
+};
 
-export default function DemoPage({ }) {
+export default function DemoPage() {
   const [imageURL, setImageURL] = useState('');
   const [dropTargetText, setDropTargetText] = useState('');
   const [searchResult, setSearchResult] = useState([]);
@@ -54,19 +106,22 @@ export default function DemoPage({ }) {
   }, []);
 
   useEffect(() => {
-    const fetchResult = async (url: String) => {
-      const response = await fetch(
-        `http://13.214.77.230:3311/search?url=${url}`
-        // `http://127.0.0.1:3311/search?url=${url}`
-      );
-      return await response.json();
-    };
     if (imageURL) {
-      fetchResult(imageURL).then((res) => {
-        console.log('fetchResult');
-        const { result = [] } = res;
-        setSearchResult(result);
-      });
+      // paste or select from file system
+      if (imageURL.startsWith('blob:')) {
+        toBlob(imageURL).then((res: any) => {
+          console.log('toBlob');
+          const { result = [] } = res;
+          setSearchResult(result);
+        });
+      } else {
+        // select from modal
+        urlSearch(imageURL).then((res) => {
+          console.log('urlSearch');
+          const { result = [] } = res;
+          setSearchResult(result);
+        });
+      }
     }
   }, [imageURL]);
 
@@ -190,16 +245,19 @@ export default function DemoPage({ }) {
               className={`col col--6 ${styles.rightDemoSide} ${styles.resultArea}`}
             >
               {searchResult.map(
-                ({
-                  // episode,
-                  filename,
-                  from,
-                  to,
-                  imdb,
-                  similarity,
-                  image,
-                  video,
-                }, index) => {
+                (
+                  {
+                    // episode,
+                    filename,
+                    from,
+                    to,
+                    imdb,
+                    similarity,
+                    image,
+                    video,
+                  },
+                  index
+                ) => {
                   return (
                     <div
                       key={`${Date.now()}${similarity}`}
