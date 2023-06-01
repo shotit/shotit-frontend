@@ -29,6 +29,7 @@ export default function DemoPage({ }) {
   const [imageURL, setImageURL] = useState('');
   const [dropTargetText, setDropTargetText] = useState('');
   const [searchResult, setSearchResult] = useState([]);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     // Hide footer
@@ -69,10 +70,16 @@ export default function DemoPage({ }) {
     }
   }, [imageURL]);
 
+  const clickToIndex = useCallback((index: number) => {
+    console.log('clickToIndex');
+    setActiveIndex(index);
+  }, []);
+
   const clearImageURL = useCallback(() => {
     console.log('clearImageURL');
     setImageURL('');
     setSearchResult([]);
+    setActiveIndex(0);
   }, []);
 
   const handleURLpaste = useCallback((e) => {
@@ -192,10 +199,12 @@ export default function DemoPage({ }) {
                   similarity,
                   image,
                   video,
-                }) => {
+                }, index) => {
                   return (
                     <div
                       key={`${Date.now()}${similarity}`}
+                      onClick={() => clickToIndex(index
+                      )}
                       style={{
                         display: 'flex',
                         flexDirection: 'row',
@@ -206,7 +215,12 @@ export default function DemoPage({ }) {
                         borderRadius: '1rem',
                         marginTop: '1rem',
                         marginBottom: '1rem',
-                        boxShadow: '0 2px 12px 0 rgba(0,0,0,.2)',
+                        cursor: 'pointer',
+                        boxShadow: `${
+                          index === activeIndex
+                            ? '0 0 15px 5px rgba(13, 110, 253, 0.2)'
+                            : '0 2px 12px 0 rgba(0,0,0,.2)'
+                        }`,
                       }}
                     >
                       <div
@@ -245,13 +259,11 @@ export default function DemoPage({ }) {
                           marginLeft: '1rem',
                           display: 'inline-block',
                           maxWidth: '300px',
-                          fontSize: "20px"
+                          fontSize: '20px',
                         }}
                       >
                         {/* <div>{episode}</div> */}
-                        <div>
-                          {timeCodeString(from, to)}
-                        </div>
+                        <div>{timeCodeString(from, to)}</div>
                         <div>
                           Similarity: {`~${(similarity * 100).toFixed(2)}%`}
                         </div>
