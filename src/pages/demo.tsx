@@ -7,7 +7,25 @@ import SearchBar from '../components/SearchBar';
 
 const { dropping } = styles;
 
-export default function DemoPage({}) {
+const formatTime = (timeInSeconds: string) => {
+  const sec_num = parseInt(timeInSeconds, 10);
+  const hours = Math.floor(sec_num / 3600);
+  const minutes = Math.floor((sec_num - hours * 3600) / 60);
+  const seconds = sec_num - hours * 3600 - minutes * 60;
+  return [
+    hours < 10 ? `0${hours}` : hours,
+    minutes < 10 ? `0${minutes}` : minutes,
+    seconds < 10 ? `0${seconds}` : seconds,
+  ].join(':');
+};
+
+const timeCodeString = (from: string, to: string) => {
+  return formatTime(String(from)) === formatTime(String(to))
+    ? formatTime(String(from))
+    : `${formatTime(String(from))} - ${formatTime(String(to))}`;
+}
+
+export default function DemoPage({ }) {
   const [imageURL, setImageURL] = useState('');
   const [dropTargetText, setDropTargetText] = useState('');
   const [searchResult, setSearchResult] = useState([]);
@@ -166,7 +184,7 @@ export default function DemoPage({}) {
             >
               {searchResult.map(
                 ({
-                  episode,
+                  // episode,
                   filename,
                   from,
                   to,
@@ -204,19 +222,20 @@ export default function DemoPage({}) {
                       </div>
                       <div
                         style={{
-                          display: "inline-block",
-                          width: "50%",
-                          aspectRatio: "16 / 9",
-                          marginTop: "1rem",
-                          marginLeft: "1rem",
-                          marginBottom: "1rem"
+                          display: 'inline-block',
+                          width: '50%',
+                          aspectRatio: '16 / 9',
+                          marginLeft: '1rem',
+                          marginTop: '1rem',
+                          marginBottom: '1rem',
                         }}
                       >
-                        <img src="https://i.ibb.co/Fq1bTmX/elephant-s-dream.png"
+                        <img
+                          src="https://i.ibb.co/Fq1bTmX/elephant-s-dream.png"
                           style={{
-                            width: "100%",
-                            aspectRatio: "16 / 9",
-                            borderRadius: "1rem"
+                            width: '100%',
+                            aspectRatio: '16 / 9',
+                            borderRadius: '1rem',
                           }}
                         ></img>
                         {/* <img src={image}></img> */}
@@ -226,14 +245,17 @@ export default function DemoPage({}) {
                           marginLeft: '1rem',
                           display: 'inline-block',
                           maxWidth: '300px',
+                          fontSize: "20px"
                         }}
                       >
-                        <div>{episode}</div>
+                        {/* <div>{episode}</div> */}
                         <div>
-                          {from} - {to}
+                          {timeCodeString(from, to)}
+                        </div>
+                        <div>
+                          Similarity: {`~${(similarity * 100).toFixed(2)}%`}
                         </div>
                         <div>IMDB: {imdb}</div>
-                        <div>Similarity: {`~${(similarity * 100).toFixed(2)}%`}</div>
                         {/* <div>{image}</div>
                         <div>{video}</div> */}
                       </div>
