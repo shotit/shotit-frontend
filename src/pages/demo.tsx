@@ -98,7 +98,7 @@ export default function DemoPage() {
       if (!items) return;
       const item = Array.from(items).find((e) => e.type.startsWith('image'));
       if (!item) return;
-      setImageURL('');
+      clearImageURL();
       setImageURL(URL.createObjectURL(item.getAsFile()));
       e.preventDefault();
     };
@@ -145,7 +145,7 @@ export default function DemoPage() {
     console.log('handleURLpaste');
 
     if (String(e).startsWith('http')) {
-      setImageURL('');
+      clearImageURL();
       setImageURL(e);
       history.replaceState(
         null,
@@ -157,12 +157,12 @@ export default function DemoPage() {
 
     // URL
     if (!e.target.value.length) {
-      setImageURL('');
+      clearImageURL();
       history.replaceState(null, null, '/shotit-frontend/demo');
       return;
     }
     if (e.target.parentNode.checkValidity()) {
-      setImageURL('');
+      clearImageURL();
       setImageURL(e.target.value);
       history.replaceState(
         null,
@@ -182,7 +182,7 @@ export default function DemoPage() {
     if (!file || !file.type.match('image.*')) {
       return 'Error: File is not an image';
     }
-    setImageURL('');
+    clearImageURL();
     setImageURL(URL.createObjectURL(file));
     return '';
   }, []);
