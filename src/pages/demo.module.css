@@ -37,6 +37,25 @@
   align-items: flex-start;
 }
 
+@media screen and (max-width: 996px) {
+  .leftDemoSide {
+    height: 50vh;
+  }
+
+  .leftDemoSide img {
+    max-height: 50vh;
+  }
+
+  .rightDemoSide {
+    height: unset;
+  }
+  
+  .skeleton {
+    margin-top: 1rem;
+    border-top: unset;
+  }
+}
+
 .searching {
   display: flex;
   flex-direction: column;
@@ -47,6 +66,13 @@
 .resultArea {
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+@media screen and (max-width: 996px) {
+  .resultArea {
+    overflow-x: unset;
+    overflow-y: unset;
+  }
 }
 
 .resultBox { 
@@ -79,6 +105,16 @@
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 996px) {
+  .thumbnail {
+    width: 100%;
+    margin: unset;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .thumbnail img {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -90,6 +126,14 @@
   display: inline-block;
   max-width: 50%;
   font-size: 20px;
+}
+
+@media screen and (max-width: 996px) {
+  .metainfo {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
 }
 
 .loadingSvg {
@@ -122,6 +166,12 @@
   transition: all 50ms ease-out;
   backdrop-filter: blur(0);
   z-index: 0;
+}
+
+@media screen and (max-width: 996px) {
+  .dropEffect {
+    height: 50vh;
+  }
 }
 
 .dropping {
