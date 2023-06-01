@@ -38,6 +38,7 @@ export default function DemoPage({}) {
     const fetchResult = async (url: String) => {
       const response = await fetch(
         `http://13.214.77.230:3311/search?url=${url}`
+        // `http://127.0.0.1:3311/search?url=${url}`
       );
       return await response.json();
     };
@@ -203,12 +204,23 @@ export default function DemoPage({}) {
                       </div>
                       <div
                         style={{
-                          display: 'inline-block',
-                          width: '320px',
-                          height: '180px',
-                          background: 'aqua',
+                          display: "inline-block",
+                          width: "50%",
+                          aspectRatio: "16 / 9",
+                          marginTop: "1rem",
+                          marginLeft: "1rem",
+                          marginBottom: "1rem"
                         }}
-                      ></div>
+                      >
+                        <img src="https://i.ibb.co/Fq1bTmX/elephant-s-dream.png"
+                          style={{
+                            width: "100%",
+                            aspectRatio: "16 / 9",
+                            borderRadius: "1rem"
+                          }}
+                        ></img>
+                        {/* <img src={image}></img> */}
+                      </div>
                       <div
                         style={{
                           marginLeft: '1rem',
@@ -217,13 +229,13 @@ export default function DemoPage({}) {
                         }}
                       >
                         <div>{episode}</div>
-                        <div></div>
-                        <div>{from}</div>
-                        <div>{to}</div>
-                        <div>{imdb}</div>
-                        <div>{similarity}</div>
-                        <div>{image}</div>
-                        <div>{video}</div>
+                        <div>
+                          {from} - {to}
+                        </div>
+                        <div>IMDB: {imdb}</div>
+                        <div>Similarity: {`~${(similarity * 100).toFixed(2)}%`}</div>
+                        {/* <div>{image}</div>
+                        <div>{video}</div> */}
                       </div>
                     </div>
                   );
