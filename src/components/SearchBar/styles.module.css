@@ -4,11 +4,7 @@
   width: 100%;
   max-width: 700px;
 }
-@media (max-width: 500px) {
-  .searchBar {
-    transform: translate(0, -160px);
-  }
-}
+
 .greet {
   display: block;
   position: absolute;
