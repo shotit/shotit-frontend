@@ -87,6 +87,11 @@ export default function DemoPage() {
     // Hide footer
     document.querySelector('footer').setAttribute('style', 'display: none;');
 
+    const searchParams = new URLSearchParams(location.search);
+    if (searchParams.has('url')) {
+      setImageURL(searchParams.get('url'));
+    }
+
     const handlePasteAnywhere = (e) => {
       console.log('image paste');
       const items = e.clipboardData?.items;
@@ -97,7 +102,6 @@ export default function DemoPage() {
       setImageURL(URL.createObjectURL(item.getAsFile()));
       e.preventDefault();
     };
-
     window.addEventListener('paste', handlePasteAnywhere, false);
 
     return () => {
