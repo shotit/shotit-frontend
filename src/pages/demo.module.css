@@ -44,9 +44,52 @@
   align-items: center;
 }
 
-.result {
+.resultArea {
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+.resultBox { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-strat;
+  align-items: center;
+  border: 1px solid #e1eaf1;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.filename {
+  width: 100%;
+  margin: 1rem 1rem 0;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
+
+.thumbnail {
+  display: inline-block;
+  width: 50%;
+  aspect-ratio: 16 / 9;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.thumbnail img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 1rem;
+}
+
+.metainfo {
+  margin-left: 1rem;
+  display: inline-block;
+  max-width: 50%;
+  font-size: 20px;
 }
 
 .loadingSvg {

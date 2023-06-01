@@ -187,7 +187,7 @@ export default function DemoPage({ }) {
           )}
           {imageURL && searchResult.length > 0 && (
             <div
-              className={`col col--6 ${styles.rightDemoSide} ${styles.result}`}
+              className={`col col--6 ${styles.rightDemoSide} ${styles.resultArea}`}
             >
               {searchResult.map(
                 ({
@@ -205,17 +205,8 @@ export default function DemoPage({ }) {
                       key={`${Date.now()}${similarity}`}
                       onClick={() => clickToIndex(index
                       )}
+                      className={`${styles.resultBox}`}
                       style={{
-                        display: 'flex',
-                        flexDirection: 'row',
-                        flexWrap: 'wrap',
-                        justifyContent: 'flex-start',
-                        alignItems: 'center',
-                        border: '1px solid #e1eaf1',
-                        borderRadius: '1rem',
-                        marginTop: '1rem',
-                        marginBottom: '1rem',
-                        cursor: 'pointer',
                         boxShadow: `${
                           index === activeIndex
                             ? '0 0 15px 5px rgba(13, 110, 253, 0.2)'
@@ -224,43 +215,20 @@ export default function DemoPage({ }) {
                       }}
                     >
                       <div
-                        style={{
-                          width: '100%',
-                          margin: '1rem 1rem 0',
-                          fontSize: '24px',
-                          fontWeight: 'bold',
-                          borderBottom: '1px solid',
-                        }}
+                        className={`${styles.filename}`}
                       >
                         {filename}
                       </div>
                       <div
-                        style={{
-                          display: 'inline-block',
-                          width: '50%',
-                          aspectRatio: '16 / 9',
-                          marginLeft: '1rem',
-                          marginTop: '1rem',
-                          marginBottom: '1rem',
-                        }}
+                        className={`${styles.thumbnail}`}
                       >
                         <img
                           src="https://i.ibb.co/Fq1bTmX/elephant-s-dream.png"
-                          style={{
-                            width: '100%',
-                            aspectRatio: '16 / 9',
-                            borderRadius: '1rem',
-                          }}
                         ></img>
                         {/* <img src={image}></img> */}
                       </div>
                       <div
-                        style={{
-                          marginLeft: '1rem',
-                          display: 'inline-block',
-                          maxWidth: '300px',
-                          fontSize: '20px',
-                        }}
+                        className={`${styles.metainfo}`}
                       >
                         {/* <div>{episode}</div> */}
                         <div>{timeCodeString(from, to)}</div>
