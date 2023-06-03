@@ -277,8 +277,21 @@ export default function DemoPage() {
                     >
                       <div className={`${styles.filename}`}>{filename}</div>
                       <div className={`${styles.thumbnail}`}>
-                        <img src="https://i.ibb.co/Fq1bTmX/elephant-s-dream.png"></img>
-                        {/* <img src={image}></img> */}
+                        {index === activeIndex && (
+                          <video
+                            src={video}
+                            poster={image}
+                            volume="0"
+                            muted
+                            autoPlay
+                            loop
+                            playsInline
+                            onContextMenu={(e) => {
+                              e.preventDefault();
+                            }}
+                          ></video>
+                        )}
+                        {index !== activeIndex && <img src={image}></img>}
                       </div>
                       <div className={`${styles.metainfo}`}>
                         {/* <div>{episode}</div> */}
