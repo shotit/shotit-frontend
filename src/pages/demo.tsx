@@ -86,7 +86,7 @@ const blobSearch = async (imageBlob) => {
     const formData = new FormData();
     formData.append('image', imageBlob);
     const response = await fetchWithTimeout(
-      `http://13.214.77.230:3311/search?cutBorders=&=`,
+      `https://shotit-api.boost-art.net/search?cutBorders=&=`,
       {
         method: 'POST',
         body: formData,
@@ -101,8 +101,7 @@ const blobSearch = async (imageBlob) => {
 const urlSearch = async (url: String) => {
   try {
     const response = await fetchWithTimeout(
-      `http://13.214.77.230:3311/search?cutBorders=&url=${url}`
-      // `http://127.0.0.1:3311/search?url=${url}`
+      `https://shotit-api.boost-art.net/search?cutBorders=&url=${url}`
     );
     return await response.json();
   } catch (error) {
