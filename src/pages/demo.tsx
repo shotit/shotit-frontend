@@ -19,7 +19,29 @@ const formatTime = (timeInSeconds: string) => {
   ].join(':');
 };
 
-const toBlob = function (src) {
+interface fetchWithTimeoutRequestInit extends RequestInit {
+  timeout?: number;
+}
+
+async function fetchWithTimeout(
+  resource,
+  options: fetchWithTimeoutRequestInit = {}
+) {
+  const { timeout = 8000 } = options;
+
+  const controller = new AbortController();
+  const id = setTimeout(() => controller.abort(), timeout);
+
+  const response = await fetch(resource, {
+    ...options,
+    signal: controller.signal,
+  });
+  clearTimeout(id);
+
+  return response;
+}
+
+const toBlob = function (src, clearImageURL, setShowError) {
   return new Promise((resolve) => {
     let img = new Image();
     img.crossOrigin = 'anonymous';
@@ -38,9 +60,18 @@ const toBlob = function (src) {
         .drawImage(e.target, 0, 0, canvas.width, canvas.height);
       canvas.toBlob(
         function (blob) {
-          blobSearch(blob).then((res) => {
-            resolve(res);
-          });
+          blobSearch(blob)
+            .then((res) => {
+              resolve(res);
+            })
+            .catch((e) => {
+              console.log(e);
+              setShowError(true);
+              setTimeout(() => {
+                setShowError(false);
+                clearImageURL();
+              }, 1000);
+            });
         },
         'image/jpeg',
         0.8
@@ -51,24 +82,31 @@ const toBlob = function (src) {
 };
 
 const blobSearch = async (imageBlob) => {
-  const formData = new FormData();
-  formData.append('image', imageBlob);
-  const response = await fetch(
-    `http://13.214.77.230:3311/search?cutBorders=&=`,
-    {
-      method: 'POST',
-      body: formData,
-    }
-  );
-  return await response.json();
+  try {
+    const formData = new FormData();
+    formData.append('image', imageBlob);
+    const response = await fetchWithTimeout(
+      `https://shotit-api.boost-art.net/search?cutBorders=&=`,
+      {
+        method: 'POST',
+        body: formData,
+      }
+    );
+    return await response.json();
+  } catch (error) {
+    throw new Error(error);
+  }
 };
 
 const urlSearch = async (url: String) => {
-  const response = await fetch(
-    `http://13.214.77.230:3311/search?cutBorders=&url=${url}`
-    // `http://127.0.0.1:3311/search?url=${url}`
-  );
-  return await response.json();
+  try {
+    const response = await fetchWithTimeout(
+      `https://shotit-api.boost-art.net/search?cutBorders=&url=${url}`
+    );
+    return await response.json();
+  } catch (error) {
+    throw new Error(error);
+  }
 };
 
 const timeCodeString = (from: string, to: string) => {
@@ -82,6 +120,7 @@ export default function DemoPage() {
   const [dropTargetText, setDropTargetText] = useState('');
   const [searchResult, setSearchResult] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [showError, setShowError] = useState(false);
 
   useEffect(() => {
     // Hide footer
@@ -113,18 +152,27 @@ export default function DemoPage() {
     if (imageURL) {
       // paste or select from file system
       if (imageURL.startsWith('blob:')) {
-        toBlob(imageURL).then((res: any) => {
+        toBlob(imageURL, clearImageURL, setShowError).then((res: any) => {
           console.log('toBlob');
           const { result = [] } = res;
           setSearchResult(result);
         });
       } else {
         // select from modal
-        urlSearch(imageURL).then((res) => {
-          console.log('urlSearch');
-          const { result = [] } = res;
-          setSearchResult(result);
-        });
+        urlSearch(imageURL)
+          .then((res) => {
+            console.log('urlSearch');
+            const { result = [] } = res;
+            setSearchResult(result);
+          })
+          .catch((e) => {
+            console.log(e);
+            setShowError(true);
+            setTimeout(() => {
+              setShowError(false);
+              clearImageURL();
+            }, 1000);
+          });
       }
     }
   }, [imageURL]);
@@ -234,13 +282,23 @@ export default function DemoPage() {
               {dropTargetText}
             </div>
           </div>
-          {imageURL && searchResult.length == 0 && (
+          {imageURL && searchResult.length === 0 && !showError && (
             <div
               className={`col col--6 ${styles.rightDemoSide} ${styles.searching}`}
             >
               <div>
                 <div className={styles.loadingSvg}></div>
                 <p className={styles.searchingText}>Searching...</p>
+              </div>
+            </div>
+          )}
+          {imageURL && searchResult.length === 0 && showError && (
+            <div
+              className={`col col--6 ${styles.rightDemoSide} ${styles.searching}`}
+            >
+              <div>
+                <div className={styles.loadingSvg}></div>
+                <p className={styles.searchingText}>Error!</p>
               </div>
             </div>
           )}
@@ -322,8 +380,6 @@ export default function DemoPage() {
                             </svg>
                           </a>
                         </div>
-                        {/* <div>{image}</div>
-                        <div>{video}</div> */}
                       </div>
                     </div>
                   );
