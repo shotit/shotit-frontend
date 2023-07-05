@@ -104,6 +104,14 @@ export default function SearchBar({
 }) {
   const [showSampleModal, setShowSampleModal] = useState(false);
 
+  useEffect(() => {
+    // preload images
+    sampleScreenshots.map((picture) => {
+      new Image().src = picture.thumbnail;
+      new Image().src = picture.url;
+    });
+  }, []);
+
   const detectInputClick = useCallback(() => {
     setShowSampleModal(true);
   }, []);
