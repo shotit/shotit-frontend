@@ -22,6 +22,7 @@ function HomepageHeader() {
             tailored for TV & Film, blazing-fast and
           </div>
           <div className="hero__subtitle">compute-efficient.</div>
+          <br />
         </div>
         <section className="hero__btngroup">
           <div>
