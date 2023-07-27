@@ -4,6 +4,7 @@ import { Skeleton } from 'antd';
 import styles from './demo.module.css';
 import defaultImg from '@site/static/img/default.png';
 import SearchBar from '../components/SearchBar';
+import SearchResult from '../components/SearchResult';
 
 const { dropping } = styles;
 
@@ -321,67 +322,19 @@ export default function DemoPage() {
                   index
                 ) => {
                   return (
-                    <div
+                    <SearchResult
                       key={`${Date.now()}${similarity}`}
-                      onClick={() => clickToIndex(index)}
-                      className={`${styles.resultBox}`}
-                      style={{
-                        boxShadow: `${
-                          index === activeIndex
-                            ? '0 0 15px 5px rgba(13, 110, 253, 0.2)'
-                            : '0 2px 12px 0 rgba(0,0,0,.2)'
-                        }`,
-                      }}
-                    >
-                      <div className={`${styles.filename}`}>{filename}</div>
-                      <div className={`${styles.thumbnail}`}>
-                        {index === activeIndex && (
-                          <video
-                            src={video}
-                            poster={image}
-                            volume="0"
-                            muted
-                            autoPlay
-                            loop
-                            playsInline
-                            onContextMenu={(e) => {
-                              e.preventDefault();
-                            }}
-                          ></video>
-                        )}
-                        {index !== activeIndex && <img src={image}></img>}
-                      </div>
-                      <div className={`${styles.metainfo}`}>
-                        {/* <div>{episode}</div> */}
-                        <div>{timeCodeString(from, to)}</div>
-                        <div>
-                          Similarity: {`~${(similarity * 100).toFixed(2)}%`}
-                        </div>
-                        <div>
-                          IMDB:&nbsp;
-                          <a
-                            href={`https://www.imdb.com/title/${imdb}/`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            {imdb}
-                            {/* open in new tab icon */}
-                            <svg
-                              width="13.5"
-                              height="13.5"
-                              aria-hidden="true"
-                              viewBox="0 0 24 24"
-                              className="iconExternalLink_node_modules-@docusaurus-theme-classic-lib-theme-Icon-ExternalLink-styles-module"
-                            >
-                              <path
-                                fill="currentColor"
-                                d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"
-                              ></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+                      filename={filename}
+                      from={from}
+                      to={to}
+                      imdb={imdb}
+                      similarity={similarity}
+                      image={image}
+                      video={video}
+                      index={index}
+                      activeIndex={activeIndex}
+                      clickToIndex={clickToIndex}
+                    />
                   );
                 }
               )}
