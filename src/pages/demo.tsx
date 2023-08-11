@@ -110,12 +110,6 @@ const urlSearch = async (url: String) => {
   }
 };
 
-const timeCodeString = (from: string, to: string) => {
-  return formatTime(String(from)) === formatTime(String(to))
-    ? formatTime(String(from))
-    : `${formatTime(String(from))} - ${formatTime(String(to))}`;
-};
-
 export default function DemoPage() {
   const [imageURL, setImageURL] = useState('');
   const [dropTargetText, setDropTargetText] = useState('');
@@ -312,6 +306,7 @@ export default function DemoPage() {
                   {
                     // episode,
                     filename,
+                    duration,
                     from,
                     to,
                     imdb,
@@ -325,6 +320,7 @@ export default function DemoPage() {
                     <SearchResult
                       key={`${Date.now()}${similarity}`}
                       filename={filename}
+                      duration={duration}
                       from={from}
                       to={to}
                       imdb={imdb}
