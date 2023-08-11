@@ -13,15 +13,18 @@ const formatTime = (timeInSeconds: string) => {
   ].join(':');
 };
 
-const timeCodeString = (from: string, to: string) => {
+const timeCodeString = (from: string, to: string, duration: string) => {
   return formatTime(String(from)) === formatTime(String(to))
-    ? formatTime(String(from))
-    : `${formatTime(String(from))} - ${formatTime(String(to))}`;
+    ? `${formatTime(String(from))}/${formatTime(String(duration))}`
+    : `${formatTime(String(from))}-${formatTime(String(to))}/${formatTime(
+        String(duration)
+      )}`;
 };
 
 export default function SearchResult({
   // episode,
   filename,
+  duration,
   from,
   to,
   imdb,
@@ -56,7 +59,7 @@ export default function SearchResult({
             loop
             playsInline
             onContextMenu={(e) => {
-              e.preventDefault();
+              // e.preventDefault();
             }}
           ></video>
         )}
@@ -64,7 +67,7 @@ export default function SearchResult({
       </div>
       <div className={`${styles.metainfo}`}>
         {/* <div>{episode}</div> */}
-        <div>{timeCodeString(from, to)}</div>
+        <div>{timeCodeString(from, to, duration)}</div>
         <div>Similarity: {`~${(similarity * 100).toFixed(2)}%`}</div>
         <div>
           IMDB:&nbsp;
