@@ -59,7 +59,7 @@ export default function SearchResult({
             loop
             playsInline
             onContextMenu={(e) => {
-              e.preventDefault();
+              // e.preventDefault();
             }}
           ></video>
         )}
