@@ -65,7 +65,8 @@ Restart `shotit-worker-watcher`, in case it doesn't catch the change of your fil
 docker restart shotit-worker-watcher
 ```
 
-When `shotit-worker-watcher` detects the existence of video files in the incoming folder, it would start uploading the videos to object-storage powered `shotit-media`. After the upload, the videos would be eliminated, then `shotit-worker-hasher` creates hash and `shotit-worker-loader` loads the hash to vector database. Use the following command to see whether the index process has been completed: 
+When `shotit-worker-watcher` detects the existence of video files in the incoming folder, it would start uploading the videos to object-storage powered `shotit-media`. After the upload, the videos would be eliminated, then `shotit-worker-hasher` creates hash and `shotit-worker-loader` loads the hash to vector database. Use the following command to see whether the index process has been completed:
+
 ```
 docker logs -f -n 100 shotit-worker-loader
 ```
@@ -87,6 +88,7 @@ Response:
             "imdb": "tt1254207",
             "filename": "Big_Buck_Bunny.mp4",
             "episode": null,
+            "duration": 596.4169921875,
             "from": 473.75,
             "to": 479.17,
             "similarity": 0.9992420673370361,
