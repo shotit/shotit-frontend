@@ -5,6 +5,8 @@ sidebar_position: 1
 
 # Get Started
 
+![Shotit Demo](/img/shotit-demo.png)
+
 Docker Compose is required, Please install it first.
 
 Minimum workload: 2v16G, 4v32G preferred.
