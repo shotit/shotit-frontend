@@ -31,7 +31,7 @@ const sampleScreenshots = [
   },
   {
     name: 'Sintel',
-    thumbnail: 'https://i.ibb.co/KxC6WMq/thumbnail-sintel.png',
+    thumbnail: 'https://i.ibb.co/L8GtKbQ/thumbnail-sintel.png',
     url: 'https://github.com/shotit/shotit-frontend/assets/27696701/35dc7137-3573-4c5e-b60f-28b2a25c5636',
   },
   {
