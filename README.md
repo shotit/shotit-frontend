@@ -1,6 +1,6 @@
 # shotit-frontend
-The frontend of shotit, with full documentation.
 
+The frontend of shotit, with full documentation.
 
 # Website
 
@@ -42,7 +42,7 @@ Not using SSH:
 $ For Linux/OSX:
 $ GIT_USER=<Your GitHub username> yarn deploy
 
-$ For Windows: 
+$ For Windows:
 $ cmd /C "set "GIT_USER=<GITHUB_USERNAME>" && yarn deploy"
 ```
 
