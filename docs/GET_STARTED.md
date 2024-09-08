@@ -11,6 +11,8 @@ Docker Compose is required, Please install it first.
 
 Minimum workload: 2v16G, 4v32G preferred.
 
+Recommendation: [DigitalOcean](https://m.do.co/c/4620ab7d0d28)
+
 ```
 git clone https://github.com/shotit/shotit.git
 cd shotit
