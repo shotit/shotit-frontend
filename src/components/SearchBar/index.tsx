@@ -35,13 +35,13 @@ const sampleScreenshots = [
     name: 'Sintel',
     thumbnail:
       'https://github.com/user-attachments/assets/a0d4efe3-ec6b-48a3-aa12-6bc1972a5fa5',
-    url: 'https://i.ibb.co/1ZfF47j/sintel.png',
+    url: 'https://i.ibb.co/jknv3693/sintel.jpg',
   },
   {
     name: 'Tears of Steel',
     thumbnail:
       'https://github.com/user-attachments/assets/2f69840b-7c42-4427-8a4c-bdbe3e33e6d3',
-    url: 'https://i.ibb.co/rcwwHc8/tears-of-steel.png',
+    url: 'https://i.ibb.co/gFgyDVn5/tears-of-steel.jpg',
   },
   {
     name: 'Caminandes 2 gran dillama',
