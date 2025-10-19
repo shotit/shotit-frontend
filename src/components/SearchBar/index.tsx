@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
+import ImagePreload from 'nt-web-image-preload';
 import styles from './styles.module.css';
 const {
   searchBar,
@@ -121,9 +122,13 @@ export default function SearchBar({
 
   useEffect(() => {
     // preload images
-    sampleScreenshots.map((picture) => {
-      new Image().src = picture.thumbnail;
-      new Image().src = picture.url;
+    const polishedArray = sampleScreenshots.reduce((result, current) => {
+      result.push(current.thumbnail);
+      result.push(current.url);
+      return result;
+    }, []);
+    ImagePreload(polishedArray, () => {
+      console.log('sampleScreenshots preload');
     });
   }, []);
 
