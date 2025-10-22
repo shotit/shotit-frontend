@@ -14,91 +14,91 @@ const sampleScreenshots = [
     name: "Elephant's Dream",
     thumbnail:
       'https://github.com/user-attachments/assets/c00fdb81-0b81-4e62-ae5a-f113d408c993',
-    url: 'https://i.ibb.co/Fq1bTmX/elephant-s-dream.png',
+    url: 'https://i.ibb.co/VWpfzW3z/elephant-s-dream.jpg',
   },
   {
     name: 'Big Buck Bunny',
     thumbnail:
       'https://github.com/user-attachments/assets/2a67a36c-ab69-4e30-9b54-d22f3d5ecc7d',
-    url: 'https://i.ibb.co/HKtX9K8/big-buck-bunny.png',
+    url: 'https://i.ibb.co/hJ0xgQ4X/big-buck-bunny.jpg',
   },
   {
     name: 'Sintel',
     thumbnail:
       'https://github.com/user-attachments/assets/a0d4efe3-ec6b-48a3-aa12-6bc1972a5fa5',
-    url: 'https://i.ibb.co/jknv3693/sintel.jpg',
+    url: 'https://i.ibb.co/fGSzcG1t/sintel.jpg',
   },
   {
     name: 'Tears of Steel',
     thumbnail:
       'https://github.com/user-attachments/assets/2f69840b-7c42-4427-8a4c-bdbe3e33e6d3',
-    url: 'https://i.ibb.co/gFgyDVn5/tears-of-steel.jpg',
+    url: 'https://i.ibb.co/21Mhz2PT/tears-of-steel.jpg',
   },
   {
     name: 'Caminandes 2 gran dillama',
     thumbnail:
       'https://github.com/user-attachments/assets/413d0c7b-9a91-41e7-a42f-dcb15fea4bf6',
-    url: 'https://i.ibb.co/zZC2kmT/Caminandes-2-Gran-Dillama.png',
+    url: 'https://i.ibb.co/GfMZfzXH/Caminandes-2-Gran-Dillama.jpg',
   },
   {
     name: 'Cosmos Laundromat: First Cycle',
     thumbnail:
       'https://github.com/user-attachments/assets/d49a255d-c709-49a5-87da-08fc9faa245e',
-    url: 'https://i.ibb.co/sRJB7SJ/Cosmos-Laundromat-First-Cycle.png',
+    url: 'https://i.ibb.co/5WM568VP/Cosmos-Laundromat-First-Cycle.jpg',
   },
   {
     name: 'Glass Half',
     thumbnail:
       'https://github.com/user-attachments/assets/4f90f282-aad2-4b3b-bb25-4e8fb372e33b',
-    url: 'https://i.ibb.co/TTDwT6j/glass-half.png',
+    url: 'https://i.ibb.co/nNHD3ynQ/glass-half.jpg',
   },
   {
     name: 'Agent 327',
     thumbnail:
       'https://github.com/user-attachments/assets/8d051f7c-9657-4ae5-8709-a493102a0a3b',
-    url: 'https://i.ibb.co/dD2rVHH/agent-327.png',
+    url: 'https://i.ibb.co/23FJBKZM/agent-327.jpg',
   },
   {
     name: 'Caminandes 3 Llamigos',
     thumbnail:
       'https://github.com/user-attachments/assets/26f8b772-bb41-400f-9d6e-eebef23c4bd7',
-    url: 'https://i.ibb.co/yfHf0CV/Caminandes-3-Llamigos.png',
+    url: 'https://i.ibb.co/nMPy7fm9/Caminandes-3-Llamigos.jpg',
   },
   {
     name: 'The Daily Dweebs',
     thumbnail:
       'https://github.com/user-attachments/assets/895ba30a-27a7-41c4-bd41-97889db27f8a',
-    url: 'https://i.ibb.co/cbzLZPw/The-Daily-Dweebs.png',
+    url: 'https://i.ibb.co/Z6h0k02f/The-Daily-Dweebs.jpg',
   },
   {
     name: 'HERO',
     thumbnail:
       'https://github.com/user-attachments/assets/41e0a497-a4cf-4de0-aef3-f28b7e675c42',
-    url: 'https://i.ibb.co/4MDgdbh/HERO.png',
+    url: 'https://i.ibb.co/N2rWvS60/HERO.jpg',
   },
   {
     name: 'Spring',
     thumbnail:
       'https://github.com/user-attachments/assets/5c904366-863a-4f1a-870c-868d6a26cde5',
-    url: 'https://i.ibb.co/M9L4f6x/spring.png',
+    url: 'https://i.ibb.co/rfdB6Zrd/spring.jpg',
   },
   {
     name: 'Coffee Run',
     thumbnail:
       'https://github.com/user-attachments/assets/7192d793-b239-4191-b9f4-d8131dbf4b12',
-    url: 'https://i.ibb.co/Ht6jnQs/coffee-run.png',
+    url: 'https://i.ibb.co/0HCMpqd/coffee-run.jpg',
   },
   {
     name: 'Sprite Fright',
     thumbnail:
       'https://github.com/user-attachments/assets/c3ae385e-1450-474a-b6c5-de7946880d4a',
-    url: 'https://i.ibb.co/G5t2sbb/Sprite-Fright.png',
+    url: 'https://i.ibb.co/ycWD51FJ/Sprite-Fright.jpg',
   },
   {
     name: 'CHARGE',
     thumbnail:
       'https://github.com/user-attachments/assets/d5837045-4445-4a53-8488-ace794c095e5',
-    url: 'https://i.ibb.co/frwQSDp/charge.png',
+    url: 'https://i.ibb.co/gbF1R717/charge.jpg',
   },
 ];
 
