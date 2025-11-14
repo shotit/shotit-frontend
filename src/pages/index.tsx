@@ -14,91 +14,91 @@ const sampleScreenshots = [
     name: 'Big Buck Bunny',
     thumbnail:
       'https://github.com/user-attachments/assets/2a67a36c-ab69-4e30-9b54-d22f3d5ecc7d',
-    url: 'https://i.ibb.co/7JRPgB7S/big-buck-bunny.jpg',
+    url: 'https://westartbucket101.blob.core.windows.net/image/big_buck_bunny.jpg',
   },
   {
     name: "Elephant's Dream",
     thumbnail:
       'https://github.com/user-attachments/assets/c00fdb81-0b81-4e62-ae5a-f113d408c993',
-    url: 'https://i.ibb.co/dw6WyhfM/elephant-s-dream.jpg',
+    url: 'https://westartbucket101.blob.core.windows.net/image/elephant_s_dream.jpg',
   },
   {
     name: 'Sintel',
     thumbnail:
       'https://github.com/user-attachments/assets/a0d4efe3-ec6b-48a3-aa12-6bc1972a5fa5',
-    url: 'https://i.ibb.co/GfJW9mRw/sintel.jpg',
+    url: 'https://westartbucket101.blob.core.windows.net/image/sintel.jpg',
   },
   {
     name: 'Tears of Steel',
     thumbnail:
       'https://github.com/user-attachments/assets/2f69840b-7c42-4427-8a4c-bdbe3e33e6d3',
-    url: 'https://i.ibb.co/8ng6JZVs/tears-of-steel.jpg',
+    url: 'https://westartbucket101.blob.core.windows.net/image/tears_of_steel.jpg',
   },
   {
     name: 'Caminandes 2 gran dillama',
     thumbnail:
       'https://github.com/user-attachments/assets/413d0c7b-9a91-41e7-a42f-dcb15fea4bf6',
-    url: 'https://i.ibb.co/5xC2mD1k/Caminandes-2-Gran-Dillama.jpg',
+    url: 'https://westartbucket101.blob.core.windows.net/image/Caminandes_2_Gran_Dillama.jpg',
   },
   {
     name: 'Cosmos Laundromat: First Cycle',
     thumbnail:
       'https://github.com/user-attachments/assets/d49a255d-c709-49a5-87da-08fc9faa245e',
-    url: 'https://i.ibb.co/SDGBMXPY/Cosmos-Laundromat-First-Cycle.jpg',
+    url: 'https://westartbucket101.blob.core.windows.net/image/CosmosLaundromat-FirstCycle.jpg',
   },
   {
     name: 'Glass Half',
     thumbnail:
       'https://github.com/user-attachments/assets/4f90f282-aad2-4b3b-bb25-4e8fb372e33b',
-    url: 'https://i.ibb.co/39066rTn/glass-half.jpg',
+    url: 'https://westartbucket101.blob.core.windows.net/image/glass_half.jpg',
   },
   {
     name: 'Agent 327',
     thumbnail:
       'https://github.com/user-attachments/assets/8d051f7c-9657-4ae5-8709-a493102a0a3b',
-    url: 'https://i.ibb.co/wFVkqKq0/agent-327.jpg',
+    url: 'https://westartbucket101.blob.core.windows.net/image/agent_327.jpg',
   },
   {
     name: 'Caminandes 3 Llamigos',
     thumbnail:
       'https://github.com/user-attachments/assets/26f8b772-bb41-400f-9d6e-eebef23c4bd7',
-    url: 'https://i.ibb.co/C52LPSkW/Caminandes-3-Llamigos.jpg',
+    url: 'https://westartbucket101.blob.core.windows.net/image/Caminandes_3_Llamigos.jpg',
   },
   {
     name: 'The Daily Dweebs',
     thumbnail:
       'https://github.com/user-attachments/assets/895ba30a-27a7-41c4-bd41-97889db27f8a',
-    url: 'https://i.ibb.co/m5S1s1fx/The-Daily-Dweebs.jpg',
+    url: 'https://westartbucket101.blob.core.windows.net/image/The_Daily_Dweebs.jpg',
   },
   {
     name: 'HERO',
     thumbnail:
       'https://github.com/user-attachments/assets/41e0a497-a4cf-4de0-aef3-f28b7e675c42',
-    url: 'https://i.ibb.co/SDF9Tpbc/HERO.jpg',
+    url: 'https://westartbucket101.blob.core.windows.net/image/HERO.jpg',
   },
   {
     name: 'Spring',
     thumbnail:
       'https://github.com/user-attachments/assets/5c904366-863a-4f1a-870c-868d6a26cde5',
-    url: 'https://i.ibb.co/vCwfXbbH/spring.jpg',
+    url: 'https://westartbucket101.blob.core.windows.net/image/spring.jpg',
   },
   {
     name: 'Coffee Run',
     thumbnail:
       'https://github.com/user-attachments/assets/7192d793-b239-4191-b9f4-d8131dbf4b12',
-    url: 'https://i.ibb.co/jvwzFgwb/coffee-run.jpg',
+    url: 'https://westartbucket101.blob.core.windows.net/image/coffee_run.jpg',
   },
   {
     name: 'Sprite Fright',
     thumbnail:
       'https://github.com/user-attachments/assets/c3ae385e-1450-474a-b6c5-de7946880d4a',
-    url: 'https://i.ibb.co/ZpJsb8gY/Sprite-Fright.jpg',
+    url: 'https://westartbucket101.blob.core.windows.net/image/Sprite-Fright.jpg',
   },
   {
     name: 'CHARGE',
     thumbnail:
       'https://github.com/user-attachments/assets/d5837045-4445-4a53-8488-ace794c095e5',
-    url: 'https://i.ibb.co/qMXjCMm0/charge.jpg',
+    url: 'https://westartbucket101.blob.core.windows.net/image/charge.jpg',
   },
 ];
 
