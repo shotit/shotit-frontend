@@ -27,10 +27,65 @@ const sampleScreenshots = [
     url: 'https://westartbucket101.blob.core.windows.net/image/big_buck_bunny.jpg',
   },
   {
+    name: 'Big Buck Bunny',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/buck-1.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/buck-1.png',
+  },
+  {
+    name: 'Big Buck Bunny',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/buck-2.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/buck-2.png',
+  },
+  {
+    name: 'Big Buck Bunny',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/buck-3.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/buck-3.png',
+  },
+  {
+    name: 'Big Buck Bunny',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/buck-4.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/buck-4.png',
+  },
+  {
+    name: 'Big Buck Bunny',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/buck-5.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/buck-5.png',
+  },
+  {
     name: "Elephant's Dream",
     thumbnail:
       'https://github.com/user-attachments/assets/c00fdb81-0b81-4e62-ae5a-f113d408c993',
     url: 'https://westartbucket101.blob.core.windows.net/image/elephant_s_dream.jpg',
+  },
+  {
+    name: "Elephant's Dream",
+    thumbnail: 'https://westartbucket101.blob.core.windows.net/image/el-1.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/el-1.png',
+  },
+  {
+    name: "Elephant's Dream",
+    thumbnail: 'https://westartbucket101.blob.core.windows.net/image/el-2.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/el-2.png',
+  },
+  {
+    name: "Elephant's Dream",
+    thumbnail: 'https://westartbucket101.blob.core.windows.net/image/el-3.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/el-3.png',
+  },
+  {
+    name: "Elephant's Dream",
+    thumbnail: 'https://westartbucket101.blob.core.windows.net/image/el-4.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/el-4.png',
+  },
+  {
+    name: "Elephant's Dream",
+    thumbnail: 'https://westartbucket101.blob.core.windows.net/image/el-5.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/el-5.png',
   },
   {
     name: 'Sintel',
@@ -39,10 +94,70 @@ const sampleScreenshots = [
     url: 'https://westartbucket101.blob.core.windows.net/image/sintel.jpg',
   },
   {
+    name: 'Sintel',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/sintel-1.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/sintel-1.png',
+  },
+  {
+    name: 'Sintel',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/sintel-2.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/sintel-2.png',
+  },
+  {
+    name: 'Sintel',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/sintel-3.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/sintel-3.png',
+  },
+  {
+    name: 'Sintel',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/sintel-4.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/sintel-4.png',
+  },
+  {
+    name: 'Sintel',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/sintel-5.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/sintel-5.png',
+  },
+  {
     name: 'Tears of Steel',
     thumbnail:
       'https://github.com/user-attachments/assets/2f69840b-7c42-4427-8a4c-bdbe3e33e6d3',
     url: 'https://westartbucket101.blob.core.windows.net/image/tears_of_steel.jpg',
+  },
+  {
+    name: 'Tears of Steel',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/tears-1.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/tears-1.png',
+  },
+  {
+    name: 'Tears of Steel',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/tears-2.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/tears-2.png',
+  },
+  {
+    name: 'Tears of Steel',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/tears-3.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/tears-3.png',
+  },
+  {
+    name: 'Tears of Steel',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/tears-4.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/tears-4.png',
+  },
+  {
+    name: 'Tears of Steel',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/tears-5.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/tears-5.png',
   },
   {
     name: 'Caminandes 2 gran dillama',
@@ -51,10 +166,70 @@ const sampleScreenshots = [
     url: 'https://westartbucket101.blob.core.windows.net/image/Caminandes_2_Gran_Dillama.jpg',
   },
   {
+    name: 'Caminandes 2 gran dillama',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/cam2-1.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/cam2-1.png',
+  },
+  {
+    name: 'Caminandes 2 gran dillama',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/cam2-2.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/cam2-2.png',
+  },
+  {
+    name: 'Caminandes 2 gran dillama',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/cam2-3.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/cam2-3.png',
+  },
+  {
+    name: 'Caminandes 2 gran dillama',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/cam2-4.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/cam2-4.png',
+  },
+  {
+    name: 'Caminandes 2 gran dillama',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/cam2-5.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/cam2-5.png',
+  },
+  {
     name: 'Cosmos Laundromat: First Cycle',
     thumbnail:
       'https://github.com/user-attachments/assets/d49a255d-c709-49a5-87da-08fc9faa245e',
     url: 'https://westartbucket101.blob.core.windows.net/image/CosmosLaundromat-FirstCycle.jpg',
+  },
+  {
+    name: 'Cosmos Laundromat: First Cycle',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/cosmos-1.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/cosmos-1.png',
+  },
+  {
+    name: 'Cosmos Laundromat: First Cycle',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/cosmos-2.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/cosmos-2.png',
+  },
+  {
+    name: 'Cosmos Laundromat: First Cycle',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/cosmos-3.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/cosmos-3.png',
+  },
+  {
+    name: 'Cosmos Laundromat: First Cycle',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/cosmos-4.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/cosmos-4.png',
+  },
+  {
+    name: 'Cosmos Laundromat: First Cycle',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/cosmos-5.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/cosmos-5.png',
   },
   {
     name: 'Glass Half',
@@ -63,10 +238,70 @@ const sampleScreenshots = [
     url: 'https://westartbucket101.blob.core.windows.net/image/glass_half.jpg',
   },
   {
+    name: 'Glass Half',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/glass-1.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/glass-1.png',
+  },
+  {
+    name: 'Glass Half',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/glass-2.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/glass-2.png',
+  },
+  {
+    name: 'Glass Half',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/glass-3.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/glass-3.png',
+  },
+  {
+    name: 'Glass Half',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/glass-4.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/glass-4.png',
+  },
+  {
+    name: 'Glass Half',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/glass-5.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/glass-5.png',
+  },
+  {
     name: 'Agent 327',
     thumbnail:
       'https://github.com/user-attachments/assets/8d051f7c-9657-4ae5-8709-a493102a0a3b',
     url: 'https://westartbucket101.blob.core.windows.net/image/agent_327.jpg',
+  },
+  {
+    name: 'Agent 327',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/agent-1.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/agent-1.png',
+  },
+  {
+    name: 'Agent 327',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/agent-2.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/agent-2.png',
+  },
+  {
+    name: 'Agent 327',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/agent-3.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/agent-3.png',
+  },
+  {
+    name: 'Agent 327',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/agent-4.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/agent-4.png',
+  },
+  {
+    name: 'Agent 327',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/agent-5.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/agent-5.png',
   },
   {
     name: 'Caminandes 3 Llamigos',
@@ -75,10 +310,70 @@ const sampleScreenshots = [
     url: 'https://westartbucket101.blob.core.windows.net/image/Caminandes_3_Llamigos.jpg',
   },
   {
+    name: 'Caminandes 3 Llamigos',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/cam3-1.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/cam3-1.png',
+  },
+  {
+    name: 'Caminandes 3 Llamigos',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/cam3-2.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/cam3-2.png',
+  },
+  {
+    name: 'Caminandes 3 Llamigos',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/cam3-3.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/cam3-3.png',
+  },
+  {
+    name: 'Caminandes 3 Llamigos',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/cam3-4.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/cam3-4.png',
+  },
+  {
+    name: 'Caminandes 3 Llamigos',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/cam3-5.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/cam3-5.png',
+  },
+  {
     name: 'The Daily Dweebs',
     thumbnail:
       'https://github.com/user-attachments/assets/895ba30a-27a7-41c4-bd41-97889db27f8a',
     url: 'https://westartbucket101.blob.core.windows.net/image/The_Daily_Dweebs.jpg',
+  },
+  {
+    name: 'The Daily Dweebs',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/daily-1.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/daily-1.png',
+  },
+  {
+    name: 'The Daily Dweebs',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/daily-2.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/daily-2.png',
+  },
+  {
+    name: 'The Daily Dweebs',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/daily-3.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/daily-3.png',
+  },
+  {
+    name: 'The Daily Dweebs',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/daily-4.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/daily-4.png',
+  },
+  {
+    name: 'The Daily Dweebs',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/daily-5.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/daily-5.png',
   },
   {
     name: 'HERO',
@@ -87,10 +382,70 @@ const sampleScreenshots = [
     url: 'https://westartbucket101.blob.core.windows.net/image/HERO.jpg',
   },
   {
+    name: 'HERO',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/hero-1.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/hero-1.png',
+  },
+  {
+    name: 'HERO',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/hero-2.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/hero-2.png',
+  },
+  {
+    name: 'HERO',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/hero-3.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/hero-3.png',
+  },
+  {
+    name: 'HERO',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/hero-4.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/hero-4.png',
+  },
+  {
+    name: 'HERO',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/hero-5.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/hero-5.png',
+  },
+  {
     name: 'Spring',
     thumbnail:
       'https://github.com/user-attachments/assets/5c904366-863a-4f1a-870c-868d6a26cde5',
     url: 'https://westartbucket101.blob.core.windows.net/image/spring.jpg',
+  },
+  {
+    name: 'Spring',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/spring-1.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/spring-1.png',
+  },
+  {
+    name: 'Spring',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/spring-2.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/spring-2.png',
+  },
+  {
+    name: 'Spring',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/spring-3.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/spring-3.png',
+  },
+  {
+    name: 'Spring',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/spring-4.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/spring-4.png',
+  },
+  {
+    name: 'Spring',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/spring-5.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/spring-5.png',
   },
   {
     name: 'Coffee Run',
@@ -99,16 +454,106 @@ const sampleScreenshots = [
     url: 'https://westartbucket101.blob.core.windows.net/image/coffee_run.jpg',
   },
   {
+    name: 'Coffee Run',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/coffee-1.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/coffee-1.png',
+  },
+  {
+    name: 'Coffee Run',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/coffee-2.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/coffee-2.png',
+  },
+  {
+    name: 'Coffee Run',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/coffee-3.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/coffee-3.png',
+  },
+  {
+    name: 'Coffee Run',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/coffee-4.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/coffee-4.png',
+  },
+  {
+    name: 'Coffee Run',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/coffee-5.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/coffee-5.png',
+  },
+  {
     name: 'Sprite Fright',
     thumbnail:
       'https://github.com/user-attachments/assets/c3ae385e-1450-474a-b6c5-de7946880d4a',
     url: 'https://westartbucket101.blob.core.windows.net/image/Sprite-Fright.jpg',
   },
   {
+    name: 'Sprite Fright',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/sprite-1.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/sprite-1.png',
+  },
+  {
+    name: 'Sprite Fright',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/sprite-2.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/sprite-2.png',
+  },
+  {
+    name: 'Sprite Fright',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/sprite-3.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/sprite-3.png',
+  },
+  {
+    name: 'Sprite Fright',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/sprite-4.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/sprite-4.png',
+  },
+  {
+    name: 'Sprite Fright',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/sprite-5.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/sprite-5.png',
+  },
+  {
     name: 'CHARGE',
     thumbnail:
       'https://github.com/user-attachments/assets/d5837045-4445-4a53-8488-ace794c095e5',
     url: 'https://westartbucket101.blob.core.windows.net/image/charge.jpg',
+  },
+  {
+    name: 'CHARGE',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/charge-1.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/charge-1.png',
+  },
+  {
+    name: 'CHARGE',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/charge-2.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/charge-2.png',
+  },
+  {
+    name: 'CHARGE',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/charge-3.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/charge-3.png',
+  },
+  {
+    name: 'CHARGE',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/charge-4.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/charge-4.png',
+  },
+  {
+    name: 'CHARGE',
+    thumbnail:
+      'https://westartbucket101.blob.core.windows.net/image/charge-5.png',
+    url: 'https://westartbucket101.blob.core.windows.net/image/charge-5.png',
   },
 ];
 
