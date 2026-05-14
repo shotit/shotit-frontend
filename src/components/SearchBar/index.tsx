@@ -24,536 +24,466 @@ const sampleScreenshots = [
     name: 'Big Buck Bunny',
     thumbnail:
       'https://github.com/user-attachments/assets/2a67a36c-ab69-4e30-9b54-d22f3d5ecc7d',
-    url: 'https://westartbucket101.blob.core.windows.net/image/big_buck_bunny.jpg',
+    url: 'https://shotit.blob.core.windows.net/demo/big_buck_bunny.jpg',
   },
   {
     name: 'Big Buck Bunny',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/buck-1.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/buck-1.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/buck-1.png',
+    url: 'https://shotit.blob.core.windows.net/demo/buck-1.png',
   },
   {
     name: 'Big Buck Bunny',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/buck-2.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/buck-2.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/buck-2.png',
+    url: 'https://shotit.blob.core.windows.net/demo/buck-2.png',
   },
   {
     name: 'Big Buck Bunny',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/buck-3.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/buck-3.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/buck-3.png',
+    url: 'https://shotit.blob.core.windows.net/demo/buck-3.png',
   },
   {
     name: 'Big Buck Bunny',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/buck-4.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/buck-4.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/buck-4.png',
+    url: 'https://shotit.blob.core.windows.net/demo/buck-4.png',
   },
   {
     name: 'Big Buck Bunny',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/buck-5.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/buck-5.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/buck-5.png',
+    url: 'https://shotit.blob.core.windows.net/demo/buck-5.png',
   },
   {
     name: "Elephant's Dream",
     thumbnail:
       'https://github.com/user-attachments/assets/c00fdb81-0b81-4e62-ae5a-f113d408c993',
-    url: 'https://westartbucket101.blob.core.windows.net/image/elephant_s_dream.jpg',
+    url: 'https://shotit.blob.core.windows.net/demo/elephant_s_dream.jpg',
   },
   {
     name: "Elephant's Dream",
-    thumbnail: 'https://westartbucket101.blob.core.windows.net/image/el-1.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/el-1.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/el-1.png',
+    url: 'https://shotit.blob.core.windows.net/demo/el-1.png',
   },
   {
     name: "Elephant's Dream",
-    thumbnail: 'https://westartbucket101.blob.core.windows.net/image/el-2.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/el-2.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/el-2.png',
+    url: 'https://shotit.blob.core.windows.net/demo/el-2.png',
   },
   {
     name: "Elephant's Dream",
-    thumbnail: 'https://westartbucket101.blob.core.windows.net/image/el-3.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/el-3.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/el-3.png',
+    url: 'https://shotit.blob.core.windows.net/demo/el-3.png',
   },
   {
     name: "Elephant's Dream",
-    thumbnail: 'https://westartbucket101.blob.core.windows.net/image/el-4.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/el-4.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/el-4.png',
+    url: 'https://shotit.blob.core.windows.net/demo/el-4.png',
   },
   {
     name: "Elephant's Dream",
-    thumbnail: 'https://westartbucket101.blob.core.windows.net/image/el-5.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/el-5.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/el-5.png',
+    url: 'https://shotit.blob.core.windows.net/demo/el-5.png',
   },
   {
     name: 'Sintel',
     thumbnail:
       'https://github.com/user-attachments/assets/a0d4efe3-ec6b-48a3-aa12-6bc1972a5fa5',
-    url: 'https://westartbucket101.blob.core.windows.net/image/sintel.jpg',
+    url: 'https://shotit.blob.core.windows.net/demo/sintel.jpg',
   },
   {
     name: 'Sintel',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/sintel-1.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/sintel-1.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/sintel-1.png',
+    url: 'https://shotit.blob.core.windows.net/demo/sintel-1.png',
   },
   {
     name: 'Sintel',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/sintel-2.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/sintel-2.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/sintel-2.png',
+    url: 'https://shotit.blob.core.windows.net/demo/sintel-2.png',
   },
   {
     name: 'Sintel',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/sintel-3.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/sintel-3.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/sintel-3.png',
+    url: 'https://shotit.blob.core.windows.net/demo/sintel-3.png',
   },
   {
     name: 'Sintel',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/sintel-4.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/sintel-4.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/sintel-4.png',
+    url: 'https://shotit.blob.core.windows.net/demo/sintel-4.png',
   },
   {
     name: 'Sintel',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/sintel-5.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/sintel-5.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/sintel-5.png',
+    url: 'https://shotit.blob.core.windows.net/demo/sintel-5.png',
   },
   {
     name: 'Tears of Steel',
     thumbnail:
       'https://github.com/user-attachments/assets/2f69840b-7c42-4427-8a4c-bdbe3e33e6d3',
-    url: 'https://westartbucket101.blob.core.windows.net/image/tears_of_steel.jpg',
+    url: 'https://shotit.blob.core.windows.net/demo/tears_of_steel.jpg',
   },
   {
     name: 'Tears of Steel',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/tears-1.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/tears-1.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/tears-1.png',
+    url: 'https://shotit.blob.core.windows.net/demo/tears-1.png',
   },
   {
     name: 'Tears of Steel',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/tears-2.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/tears-2.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/tears-2.png',
+    url: 'https://shotit.blob.core.windows.net/demo/tears-2.png',
   },
   {
     name: 'Tears of Steel',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/tears-3.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/tears-3.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/tears-3.png',
+    url: 'https://shotit.blob.core.windows.net/demo/tears-3.png',
   },
   {
     name: 'Tears of Steel',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/tears-4.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/tears-4.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/tears-4.png',
+    url: 'https://shotit.blob.core.windows.net/demo/tears-4.png',
   },
   {
     name: 'Tears of Steel',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/tears-5.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/tears-5.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/tears-5.png',
+    url: 'https://shotit.blob.core.windows.net/demo/tears-5.png',
   },
   {
     name: 'Caminandes 2 gran dillama',
     thumbnail:
       'https://github.com/user-attachments/assets/413d0c7b-9a91-41e7-a42f-dcb15fea4bf6',
-    url: 'https://westartbucket101.blob.core.windows.net/image/Caminandes_2_Gran_Dillama.jpg',
+    url: 'https://shotit.blob.core.windows.net/demo/Caminandes_2_Gran_Dillama.jpg',
   },
   {
     name: 'Caminandes 2 gran dillama',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/cam2-1.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/cam2-1.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/cam2-1.png',
+    url: 'https://shotit.blob.core.windows.net/demo/cam2-1.png',
   },
   {
     name: 'Caminandes 2 gran dillama',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/cam2-2.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/cam2-2.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/cam2-2.png',
+    url: 'https://shotit.blob.core.windows.net/demo/cam2-2.png',
   },
   {
     name: 'Caminandes 2 gran dillama',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/cam2-3.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/cam2-3.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/cam2-3.png',
+    url: 'https://shotit.blob.core.windows.net/demo/cam2-3.png',
   },
   {
     name: 'Caminandes 2 gran dillama',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/cam2-4.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/cam2-4.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/cam2-4.png',
+    url: 'https://shotit.blob.core.windows.net/demo/cam2-4.png',
   },
   {
     name: 'Caminandes 2 gran dillama',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/cam2-5.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/cam2-5.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/cam2-5.png',
+    url: 'https://shotit.blob.core.windows.net/demo/cam2-5.png',
   },
   {
     name: 'Cosmos Laundromat: First Cycle',
     thumbnail:
       'https://github.com/user-attachments/assets/d49a255d-c709-49a5-87da-08fc9faa245e',
-    url: 'https://westartbucket101.blob.core.windows.net/image/CosmosLaundromat-FirstCycle.jpg',
+    url: 'https://shotit.blob.core.windows.net/demo/CosmosLaundromat-FirstCycle.jpg',
   },
   {
     name: 'Cosmos Laundromat: First Cycle',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/cosmos-1.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/cosmos-1.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/cosmos-1.png',
+    url: 'https://shotit.blob.core.windows.net/demo/cosmos-1.png',
   },
   {
     name: 'Cosmos Laundromat: First Cycle',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/cosmos-2.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/cosmos-2.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/cosmos-2.png',
+    url: 'https://shotit.blob.core.windows.net/demo/cosmos-2.png',
   },
   {
     name: 'Cosmos Laundromat: First Cycle',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/cosmos-3.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/cosmos-3.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/cosmos-3.png',
+    url: 'https://shotit.blob.core.windows.net/demo/cosmos-3.png',
   },
   {
     name: 'Cosmos Laundromat: First Cycle',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/cosmos-4.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/cosmos-4.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/cosmos-4.png',
+    url: 'https://shotit.blob.core.windows.net/demo/cosmos-4.png',
   },
   {
     name: 'Cosmos Laundromat: First Cycle',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/cosmos-5.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/cosmos-5.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/cosmos-5.png',
+    url: 'https://shotit.blob.core.windows.net/demo/cosmos-5.png',
   },
   {
     name: 'Glass Half',
     thumbnail:
       'https://github.com/user-attachments/assets/4f90f282-aad2-4b3b-bb25-4e8fb372e33b',
-    url: 'https://westartbucket101.blob.core.windows.net/image/glass_half.jpg',
+    url: 'https://shotit.blob.core.windows.net/demo/glass_half.jpg',
   },
   {
     name: 'Glass Half',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/glass-1.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/glass-1.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/glass-1.png',
+    url: 'https://shotit.blob.core.windows.net/demo/glass-1.png',
   },
   {
     name: 'Glass Half',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/glass-2.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/glass-2.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/glass-2.png',
+    url: 'https://shotit.blob.core.windows.net/demo/glass-2.png',
   },
   {
     name: 'Glass Half',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/glass-3.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/glass-3.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/glass-3.png',
+    url: 'https://shotit.blob.core.windows.net/demo/glass-3.png',
   },
   {
     name: 'Glass Half',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/glass-4.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/glass-4.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/glass-4.png',
+    url: 'https://shotit.blob.core.windows.net/demo/glass-4.png',
   },
   {
     name: 'Glass Half',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/glass-5.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/glass-5.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/glass-5.png',
+    url: 'https://shotit.blob.core.windows.net/demo/glass-5.png',
   },
   {
     name: 'Agent 327',
     thumbnail:
       'https://github.com/user-attachments/assets/8d051f7c-9657-4ae5-8709-a493102a0a3b',
-    url: 'https://westartbucket101.blob.core.windows.net/image/agent_327.jpg',
+    url: 'https://shotit.blob.core.windows.net/demo/agent_327.jpg',
   },
   {
     name: 'Agent 327',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/agent-1.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/agent-1.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/agent-1.png',
+    url: 'https://shotit.blob.core.windows.net/demo/agent-1.png',
   },
   {
     name: 'Agent 327',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/agent-2.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/agent-2.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/agent-2.png',
+    url: 'https://shotit.blob.core.windows.net/demo/agent-2.png',
   },
   {
     name: 'Agent 327',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/agent-3.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/agent-3.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/agent-3.png',
+    url: 'https://shotit.blob.core.windows.net/demo/agent-3.png',
   },
   {
     name: 'Agent 327',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/agent-4.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/agent-4.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/agent-4.png',
+    url: 'https://shotit.blob.core.windows.net/demo/agent-4.png',
   },
   {
     name: 'Agent 327',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/agent-5.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/agent-5.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/agent-5.png',
+    url: 'https://shotit.blob.core.windows.net/demo/agent-5.png',
   },
   {
     name: 'Caminandes 3 Llamigos',
     thumbnail:
       'https://github.com/user-attachments/assets/26f8b772-bb41-400f-9d6e-eebef23c4bd7',
-    url: 'https://westartbucket101.blob.core.windows.net/image/Caminandes_3_Llamigos.jpg',
+    url: 'https://shotit.blob.core.windows.net/demo/Caminandes_3_Llamigos.jpg',
   },
   {
     name: 'Caminandes 3 Llamigos',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/cam3-1.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/cam3-1.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/cam3-1.png',
+    url: 'https://shotit.blob.core.windows.net/demo/cam3-1.png',
   },
   {
     name: 'Caminandes 3 Llamigos',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/cam3-2.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/cam3-2.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/cam3-2.png',
+    url: 'https://shotit.blob.core.windows.net/demo/cam3-2.png',
   },
   {
     name: 'Caminandes 3 Llamigos',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/cam3-3.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/cam3-3.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/cam3-3.png',
+    url: 'https://shotit.blob.core.windows.net/demo/cam3-3.png',
   },
   {
     name: 'Caminandes 3 Llamigos',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/cam3-4.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/cam3-4.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/cam3-4.png',
+    url: 'https://shotit.blob.core.windows.net/demo/cam3-4.png',
   },
   {
     name: 'Caminandes 3 Llamigos',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/cam3-5.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/cam3-5.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/cam3-5.png',
+    url: 'https://shotit.blob.core.windows.net/demo/cam3-5.png',
   },
   {
     name: 'The Daily Dweebs',
     thumbnail:
       'https://github.com/user-attachments/assets/895ba30a-27a7-41c4-bd41-97889db27f8a',
-    url: 'https://westartbucket101.blob.core.windows.net/image/The_Daily_Dweebs.jpg',
+    url: 'https://shotit.blob.core.windows.net/demo/The_Daily_Dweebs.jpg',
   },
   {
     name: 'The Daily Dweebs',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/daily-1.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/daily-1.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/daily-1.png',
+    url: 'https://shotit.blob.core.windows.net/demo/daily-1.png',
   },
   {
     name: 'The Daily Dweebs',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/daily-2.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/daily-2.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/daily-2.png',
+    url: 'https://shotit.blob.core.windows.net/demo/daily-2.png',
   },
   {
     name: 'The Daily Dweebs',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/daily-3.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/daily-3.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/daily-3.png',
+    url: 'https://shotit.blob.core.windows.net/demo/daily-3.png',
   },
   {
     name: 'The Daily Dweebs',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/daily-4.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/daily-4.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/daily-4.png',
+    url: 'https://shotit.blob.core.windows.net/demo/daily-4.png',
   },
   {
     name: 'The Daily Dweebs',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/daily-5.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/daily-5.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/daily-5.png',
+    url: 'https://shotit.blob.core.windows.net/demo/daily-5.png',
   },
   {
     name: 'HERO',
     thumbnail:
       'https://github.com/user-attachments/assets/41e0a497-a4cf-4de0-aef3-f28b7e675c42',
-    url: 'https://westartbucket101.blob.core.windows.net/image/HERO.jpg',
+    url: 'https://shotit.blob.core.windows.net/demo/HERO.jpg',
   },
   {
     name: 'HERO',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/hero-1.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/hero-1.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/hero-1.png',
+    url: 'https://shotit.blob.core.windows.net/demo/hero-1.png',
   },
   {
     name: 'HERO',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/hero-2.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/hero-2.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/hero-2.png',
+    url: 'https://shotit.blob.core.windows.net/demo/hero-2.png',
   },
   {
     name: 'HERO',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/hero-3.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/hero-3.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/hero-3.png',
+    url: 'https://shotit.blob.core.windows.net/demo/hero-3.png',
   },
   {
     name: 'HERO',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/hero-4.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/hero-4.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/hero-4.png',
+    url: 'https://shotit.blob.core.windows.net/demo/hero-4.png',
   },
   {
     name: 'HERO',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/hero-5.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/hero-5.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/hero-5.png',
+    url: 'https://shotit.blob.core.windows.net/demo/hero-5.png',
   },
   {
     name: 'Spring',
     thumbnail:
       'https://github.com/user-attachments/assets/5c904366-863a-4f1a-870c-868d6a26cde5',
-    url: 'https://westartbucket101.blob.core.windows.net/image/spring.jpg',
+    url: 'https://shotit.blob.core.windows.net/demo/spring.jpg',
   },
   {
     name: 'Spring',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/spring-1.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/spring-1.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/spring-1.png',
+    url: 'https://shotit.blob.core.windows.net/demo/spring-1.png',
   },
   {
     name: 'Spring',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/spring-2.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/spring-2.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/spring-2.png',
+    url: 'https://shotit.blob.core.windows.net/demo/spring-2.png',
   },
   {
     name: 'Spring',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/spring-3.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/spring-3.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/spring-3.png',
+    url: 'https://shotit.blob.core.windows.net/demo/spring-3.png',
   },
   {
     name: 'Spring',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/spring-4.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/spring-4.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/spring-4.png',
+    url: 'https://shotit.blob.core.windows.net/demo/spring-4.png',
   },
   {
     name: 'Spring',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/spring-5.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/spring-5.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/spring-5.png',
+    url: 'https://shotit.blob.core.windows.net/demo/spring-5.png',
   },
   {
     name: 'Coffee Run',
     thumbnail:
       'https://github.com/user-attachments/assets/7192d793-b239-4191-b9f4-d8131dbf4b12',
-    url: 'https://westartbucket101.blob.core.windows.net/image/coffee_run.jpg',
+    url: 'https://shotit.blob.core.windows.net/demo/coffee_run.jpg',
   },
   {
     name: 'Coffee Run',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/coffee-1.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/coffee-1.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/coffee-1.png',
+    url: 'https://shotit.blob.core.windows.net/demo/coffee-1.png',
   },
   {
     name: 'Coffee Run',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/coffee-2.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/coffee-2.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/coffee-2.png',
+    url: 'https://shotit.blob.core.windows.net/demo/coffee-2.png',
   },
   {
     name: 'Coffee Run',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/coffee-3.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/coffee-3.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/coffee-3.png',
+    url: 'https://shotit.blob.core.windows.net/demo/coffee-3.png',
   },
   {
     name: 'Coffee Run',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/coffee-4.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/coffee-4.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/coffee-4.png',
+    url: 'https://shotit.blob.core.windows.net/demo/coffee-4.png',
   },
   {
     name: 'Coffee Run',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/coffee-5.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/coffee-5.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/coffee-5.png',
+    url: 'https://shotit.blob.core.windows.net/demo/coffee-5.png',
   },
   {
     name: 'Sprite Fright',
     thumbnail:
       'https://github.com/user-attachments/assets/c3ae385e-1450-474a-b6c5-de7946880d4a',
-    url: 'https://westartbucket101.blob.core.windows.net/image/Sprite-Fright.jpg',
+    url: 'https://shotit.blob.core.windows.net/demo/Sprite-Fright.jpg',
   },
   {
     name: 'Sprite Fright',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/sprite-1.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/sprite-1.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/sprite-1.png',
+    url: 'https://shotit.blob.core.windows.net/demo/sprite-1.png',
   },
   {
     name: 'Sprite Fright',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/sprite-2.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/sprite-2.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/sprite-2.png',
+    url: 'https://shotit.blob.core.windows.net/demo/sprite-2.png',
   },
   {
     name: 'Sprite Fright',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/sprite-3.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/sprite-3.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/sprite-3.png',
+    url: 'https://shotit.blob.core.windows.net/demo/sprite-3.png',
   },
   {
     name: 'Sprite Fright',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/sprite-4.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/sprite-4.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/sprite-4.png',
+    url: 'https://shotit.blob.core.windows.net/demo/sprite-4.png',
   },
   {
     name: 'Sprite Fright',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/sprite-5.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/sprite-5.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/sprite-5.png',
+    url: 'https://shotit.blob.core.windows.net/demo/sprite-5.png',
   },
   {
     name: 'CHARGE',
     thumbnail:
       'https://github.com/user-attachments/assets/d5837045-4445-4a53-8488-ace794c095e5',
-    url: 'https://westartbucket101.blob.core.windows.net/image/charge.jpg',
+    url: 'https://shotit.blob.core.windows.net/demo/charge.jpg',
   },
   {
     name: 'CHARGE',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/charge-1.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/charge-1.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/charge-1.png',
+    url: 'https://shotit.blob.core.windows.net/demo/charge-1.png',
   },
   {
     name: 'CHARGE',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/charge-2.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/charge-2.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/charge-2.png',
+    url: 'https://shotit.blob.core.windows.net/demo/charge-2.png',
   },
   {
     name: 'CHARGE',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/charge-3.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/charge-3.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/charge-3.png',
+    url: 'https://shotit.blob.core.windows.net/demo/charge-3.png',
   },
   {
     name: 'CHARGE',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/charge-4.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/charge-4.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/charge-4.png',
+    url: 'https://shotit.blob.core.windows.net/demo/charge-4.png',
   },
   {
     name: 'CHARGE',
-    thumbnail:
-      'https://westartbucket101.blob.core.windows.net/image/charge-5.png',
-    url: 'https://westartbucket101.blob.core.windows.net/image/charge-5.png',
+    thumbnail: 'https://shotit.blob.core.windows.net/demo/charge-5.png',
+    url: 'https://shotit.blob.core.windows.net/demo/charge-5.png',
   },
 ];
 
