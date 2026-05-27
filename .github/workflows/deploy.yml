@@ -38,3 +38,15 @@ jobs:
           # You can swap them out with your own user credentials.
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
+
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.GH_TOKEN }}
+        with:
+          source-directory: 'build'
+          destination-github-username: 'shotit'
+          destination-repository-name: 'shotit.github.io'
+          user_name: github-actions[bot]
+          user-email: 41898282+github-actions[bot]@users.noreply.github.com
+          target-branch: main
